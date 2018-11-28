@@ -19,18 +19,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(ddCash);
-    unitlist.append(mddCash);
-    unitlist.append(uddCash);
+    unitlist.append(LOT);
+    unitlist.append(mLOT);
+    unitlist.append(uLOT);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case ddCash:
-    case mddCash:
-    case uddCash:
+    case LOT:
+    case mLOT:
+    case uLOT:
         return true;
     default:
         return false;
@@ -40,12 +40,12 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case ddCash:
-        return QString("ddCash");
-    case mddCash:
-        return QString("mddCash");
-    case uddCash:
-        return QString::fromUtf8("uddCash");
+    case LOT:
+        return QString("LOT");
+    case mLOT:
+        return QString("mLOT");
+    case uLOT:
+        return QString::fromUtf8("uLOT");
     default:
         return QString("???");
     }
@@ -55,23 +55,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case ddCash:
-            return QString("ddCash");
-        case mddCash:
-            return QString("mddCash");
-        case uddCash:
-            return QString::fromUtf8("μddCash");
+        case LOT:
+            return QString("LOT");
+        case mLOT:
+            return QString("mLOT");
+        case uLOT:
+            return QString::fromUtf8("μLOT");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case ddCash:
-            return QString("tddCash");
-        case mddCash:
-            return QString("mtddCash");
-        case uddCash:
-            return QString::fromUtf8("μtddCash");
+        case LOT:
+            return QString("tLOT");
+        case mLOT:
+            return QString("mtLOT");
+        case uLOT:
+            return QString::fromUtf8("μtLOT");
         default:
             return QString("???");
         }
@@ -82,23 +82,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case ddCash:
-            return QString("ddCash");
-        case mddCash:
-            return QString("Milli-ddCash (1 / 1" THIN_SP_UTF8 "000)");
-        case uddCash:
-            return QString("Micro-ddCash (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case LOT:
+            return QString("LOT");
+        case mLOT:
+            return QString("Milli-LOT (1 / 1" THIN_SP_UTF8 "000)");
+        case uLOT:
+            return QString("Micro-LOT (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case ddCash:
-            return QString("TestddCashs");
-        case mddCash:
-            return QString("Milli-TestddCash (1 / 1" THIN_SP_UTF8 "000)");
-        case uddCash:
-            return QString("Micro-TestddCash (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case LOT:
+            return QString("TestLOTs");
+        case mLOT:
+            return QString("Milli-TestLOT (1 / 1" THIN_SP_UTF8 "000)");
+        case uLOT:
+            return QString("Micro-TestLOT (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -108,11 +108,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case ddCash:
+    case LOT:
         return 100000000;
-    case mddCash:
+    case mLOT:
         return 100000;
-    case uddCash:
+    case uLOT:
         return 100;
     default:
         return 100000000;
@@ -122,11 +122,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case ddCash:
+    case LOT:
         return 8;
-    case mddCash:
+    case mLOT:
         return 5;
-    case uddCash:
+    case uLOT:
         return 2;
     default:
         return 0;

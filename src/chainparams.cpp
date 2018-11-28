@@ -100,12 +100,12 @@ public:
          * The characters are rarely used upper ASCII, not valid as UTF-8, and produce
          * a large 4-byte int at any alignment.
          */
-        pchMessageStart[0] = 0x72;
-        pchMessageStart[1] = 0x53;
-        pchMessageStart[2] = 0x54;
-        pchMessageStart[3] = 0x65;
+        pchMessageStart[0] = 0x73;
+        pchMessageStart[1] = 0x55;
+        pchMessageStart[2] = 0x51;
+        pchMessageStart[3] = 0x66;
         vAlertPubKey = ParseHex("04c32c8ab64b43228550115a862847deb294b776a71d6395e9c49477d13eac413f022e40462770dbc665f8a32aeec2a5d87839239f9a0b91a85269f90e79ab0ccc");
-        nDefaultPort = 12007;
+        nDefaultPort = 6462;
         //bnProofOfWorkLimit = ~uint256(0) >> 1; // ddCash starting difficulty is 1 / 2^12
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Trittium starting difficulty is 1 / 2^20
         nSubsidyHalvingInterval = 2100000000;
@@ -118,30 +118,20 @@ public:
         nTargetSpacing = 1 * 60; //ddCash: 1 minute
         nMaturity = 15;
         nMasternodeCountDrift = 20;
-        nMaxMoneyOut = 10000000000 * COIN; //500,000,000
+        nMaxMoneyOut = 100000000 * COIN; //100,000,000
 
         /** Height or Time Based Activations **/
         nLastPOWBlock = 1000000;
         nModifierUpdateBlock = 999999999;
         nZerocoinStartHeight = 100000;
         nAccumulatorStartHeight = 1;
-        nZerocoinStartTime = 1546300800; // Friday, June 1, 2018 12:00:00 AM - GMT
+        nZerocoinStartTime = 1543413680; // Friday, June 1, 2018 12:00:00 AM - GMT
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
         nBlockRecalculateAccumulators = ~1; //Trigger a recalculation of accumulators
         nBlockFirstFraudulent = ~1; //First block that bad serials emerged
         nBlockLastGoodCheckpoint = ~1; //Last valid accumulator checkpoint
 
-        /**
-         * Build the genesis block. Note that the output of the genesis coinbase cannot
-         * be spent as it did not originally exist in the database.
-         *
-         * CBlock(hash=00000ffd590b14, ver=1, hashPrevBlock=00000000000000, hashMerkleRoot=e0028e, nTime=1390095618, nBits=1e0ffff0, nNonce=28917698, vtx=1)
-         *   CTransaction(hash=e0028e, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-         *     CTxIn(COutPoint(000000, -1), coinbase 04ffff001d01044c5957697265642030392f4a616e2f3230313420546865204772616e64204578706572696d656e7420476f6573204c6976653a204f76657273746f636b2e636f6d204973204e6f7720416363657074696e6720426974636f696e73)
-         *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
-         *   vMerkleTree: e0028e
-         */
-        const char* pszTimestamp = "ddCash Release";
+        const char* pszTimestamp = "LocalTradeCoin Release";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -152,11 +142,11 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1543313606;  // 11/27/2018 @ 10:13am (UTC)
+        genesis.nTime = 1543413680;  // 11/27/2018 @ 10:13am (UTC)
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 76378;
+        genesis.nNonce = 0;
 
-        /* printf("Generating genesis block...\n");
+        printf("Generating genesis block...\n");
         uint32_t nounce = 1;
      		while(1) {
           printf("Nounce: %d\n", nounce);
@@ -174,18 +164,15 @@ public:
        			}
      		}
         printf("genesis: %s\n",hashGenesisBlock.GetHex().c_str());
-        printf("merklehash: %s\n",genesis.hashMerkleRoot.ToString().c_str()); */
+        printf("merklehash: %s\n",genesis.hashMerkleRoot.ToString().c_str());
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x0000507441042032a69a291f0a564d769604bde36269cc7622858f344d8870fc"));
-        assert(genesis.hashMerkleRoot == uint256("0x258d743e2620fd57d583d782a1834a44b75de6d4f74ee731ed83a3a4e9c15769"));
-        vSeeds.push_back(CDNSSeedData("213.239.221.114", "213.239.221.114"));
-        vSeeds.push_back(CDNSSeedData("13.236.225.171", "13.236.225.171"));
-        vSeeds.push_back(CDNSSeedData("13.237.74.18", "13.237.74.18"));
-        vSeeds.push_back(CDNSSeedData("52.194.82.220", "52.194.82.220"));
-        vSeeds.push_back(CDNSSeedData("18.182.199.213", "18.182.199.213"));
-        vSeeds.push_back(CDNSSeedData("35.177.114.231", "35.177.114.231"));
-        vSeeds.push_back(CDNSSeedData("35.177.142.92", "35.177.142.92"));
-		    base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 31);
+        assert(hashGenesisBlock == uint256("0x000"));
+        assert(genesis.hashMerkleRoot == uint256("0x000"));
+        //vSeeds.push_back(CDNSSeedData("213.239.221.114", "213.239.221.114"));
+        //vSeeds.push_back(CDNSSeedData("13.236.225.171", "13.236.225.171"));
+        //vSeeds.push_back(CDNSSeedData("13.237.74.18", "13.237.74.18"));
+
+		    base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 48);
 		    base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1, 4);
 		    base58Prefixes[SECRET_KEY] = std::vector<unsigned char>(1, 28+128);
         base58Prefixes[EXT_PUBLIC_KEY] = {0x06, 0x89, 0xB2, 0x1E};

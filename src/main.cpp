@@ -80,7 +80,7 @@ bool fVerifyingBlocks = false;
 unsigned int nCoinCacheSize = 5000;
 bool fAlerts = DEFAULT_ALERTS;
 
-unsigned int nStakeMinAge = 60*60*2; //2 hours
+unsigned int nStakeMinAge = 60*60*12; //2 hours
 int64_t nReserveBalance = 0;
 
 /** Fees smaller than this (in duffs) are considered zero fee (for relaying and mining)
@@ -2117,40 +2117,19 @@ double ConvertBitsToDouble(unsigned int nBits)
     return dDiff;
 }
 
-/*int gettier(std::string& payee){
-int temp1=0;
-   // std::vector<CMasternode> vMasternodez = mnodeman.GetFullMasternodeVector();
-    BOOST_FOREACH(PAIRTYPE(const std::string,  int64_t) tier, mnodeman.getmntiermap()) {
-        if(tier.first == payee)
-	{
-		temp1 = tier.second;
-	}
-	}
-return temp1;
-}*/
-/*void addpairtomap(const std::string& payee) {
-static int currentheight = chainActive.Height();
-LogPrintf("CURRENT HEIGHT: %d\n",currentheight);
-//masternodeTiers.insert ( std::pair<std::string,int>(payee,currentheight) );
-masternodeTiers.insert(std::make_pair(payee, currentheight));
-    BOOST_FOREACH(PAIRTYPE(const std::string, int) & tier, masternodeTiers) {
-              LogPrintf("PAYEE: %s RANK: %d\n",tier.first, tier.second);
-              LogPrintf("hiiii\n");
-              LogPrintf("GETTIER: %d\n",gettier(tier.first));
-       }
-}
-*/
 int64_t GetBlockValue(int nHeight)
 {
     int64_t nSubsidy = 0;
     if(nHeight == 1)
     {
-      return  9999900000 * COIN;  // Return 9,999,900,000 ddCash
+      return  50000000 * COIN;  // Return 50,000,000 LOT
     }
-    else if(nHeight < 1000000)
-    {
-      return 0.000001 * COIN; // Return 0.000001 ddCash
-    }
+
+    if (nHeight < 50000000) {
+  	   return  .01 * COIN;
+  	}  else if(nHeight > 50000000 && nHeight <= 100000000) {
+  	   return .001 * COIN;
+  	}
     return nSubsidy;
 }
 
@@ -2166,7 +2145,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
 
 	// 80% for Masternodes
 	if (nHeight > 1) {
-		  ret = blockValue  / 100 * 70; //70%
+		  ret = blockValue  / 100 * 80; //70%
 	}
     return ret;
 }
