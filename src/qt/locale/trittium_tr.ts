@@ -62,12 +62,12 @@
         <translation>Alıcı Adres</translation>
     </message>
     <message>
-        <source>These are your ddCash addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Bunlar ödemeleri göndermek için olan ddCash adreslerinizdir.Coinleri göndermeden önce her zaman gönderilen miktarı ve adresi kontrol edin</translation>
+        <source>These are your LocalTrade addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Bunlar ödemeleri göndermek için olan LocalTrade adreslerinizdir.Coinleri göndermeden önce her zaman gönderilen miktarı ve adresi kontrol edin</translation>
     </message>
     <message>
-        <source>These are your ddCash addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Bunlar ödemeleri almak için olan ddCash adreslerinizdirHer işlem için yeni bir adres kullanmanız önerilir.</translation>
+        <source>These are your LocalTrade addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Bunlar ödemeleri almak için olan LocalTrade adreslerinizdirHer işlem için yeni bir adres kullanmanız önerilir.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,15 +176,15 @@
         <translation>cüzdan şifrelemesini onayla</translation>
     </message>
     <message>
-        <source>ddCash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ddCashs from being stolen by malware infecting your computer.</source>
-        <translation>ddCash şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, ddCash'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
+        <source>LocalTrade will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LocalTrades from being stolen by malware infecting your computer.</source>
+        <translation>LocalTrade şifreleme işlemini tamamlamak için şimdi kapanacaktır. Cüzdanınızı şifrelemenin, LocalTrade'lerinizi bilgisayarınıza bulaşan kötücül yazılımlar tarafından çalınmasına tamamen engelleyemediğini unutmayın</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Cüzdanınızı şifrelemek istediğinizden emin misiniz?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ddCash&lt;/b&gt;!</source>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LocalTrade&lt;/b&gt;!</source>
         <translation>Dikkat! Eğer cüzdanınızı şifrelerseniz ve şifrenizi unutursanız &lt;b&gt;Tüm Pıvlerinizi kaybedersiniz&lt;/b&gt;!</translation>
     </message>
     <message>
@@ -242,8 +242,8 @@
         <translation>&amp;BIP 38 şifrele</translation>
     </message>
     <message>
-        <source>Enter a ddCash Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>BIP 38'i kullanarak şifrelemek istediğiniz bir ddCash Adresi girin. Orta kutuya bir parola girin. Şifreli özel anahtarı hesaplamak için şifreleme tuşuna basın.
+        <source>Enter a LocalTrade Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>BIP 38'i kullanarak şifrelemek istediğiniz bir LocalTrade Adresi girin. Orta kutuya bir parola girin. Şifreli özel anahtarı hesaplamak için şifreleme tuşuna basın.
 </translation>
     </message>
     <message>
@@ -251,8 +251,8 @@
         <translation>adres</translation>
     </message>
     <message>
-        <source>The ddCash address to sign the message with</source>
-        <translation>Ile mesaj imzalamak için ddCash adresi
+        <source>The LocalTrade address to sign the message with</source>
+        <translation>Ile mesaj imzalamak için LocalTrade adresi
 </translation>
     </message>
     <message>
@@ -289,8 +289,8 @@
 </translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ddCash address</source>
-        <translation>Bu ddCash adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala
+        <source>Sign the message to prove you own this LocalTrade address</source>
+        <translation>Bu LocalTrade adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala
 </translation>
     </message>
     <message>
@@ -316,12 +316,12 @@
         <translation>BIP 38 şifreli özel anahtarını girin. Orta kutuya şifreyi  girin. Özel anahtarı hesaplamak için Anahtarın Çözülmesini tıklayın. Anahtar çözüldükten sonra 'Alma Adresi'ni tıklamak, bu özel anahtarı cüzdana ekleyecektir.</translation>
     </message>
     <message>
-        <source>The ddCash address the message was signed with</source>
-        <translation>Mesajın imzalandığı ddCash adresi</translation>
+        <source>The LocalTrade address the message was signed with</source>
+        <translation>Mesajın imzalandığı LocalTrade adresi</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ddCash address</source>
-        <translation>Belirtilen ddCash adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
+        <source>Verify the message to ensure it was signed with the specified LocalTrade address</source>
+        <translation>Belirtilen LocalTrade adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -613,16 +613,16 @@
         <translation>Sekme tablosu</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash CORE</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade CORE</translation>
     </message>
     <message>
-        <source>Send coins to a ddCash address</source>
-        <translation>Koinleri ddCash adresine gönder</translation>
+        <source>Send coins to a LocalTrade address</source>
+        <translation>Koinleri LocalTrade adresine gönder</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ddcash: URIs)</source>
-        <translation>Ödeme talep etme (QR kodları ve ddcash üretir: URI'ler)</translation>
+        <source>Request payments (generates QR codes and localtrade: URIs)</source>
+        <translation>Ödeme talep etme (QR kodları ve localtrade üretir: URI'ler)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -637,24 +637,24 @@
         <translation>Masternodları ara</translation>
     </message>
     <message>
-        <source>&amp;About ddCash Core</source>
+        <source>&amp;About LocalTrade Core</source>
         <translation>Pıvx core Hakkında</translation>
     </message>
     <message>
-        <source>Show information about ddCash Core</source>
+        <source>Show information about LocalTrade Core</source>
         <translation>Pıvx Core hakkında bilgi göster</translation>
     </message>
     <message>
-        <source>Modify configuration options for ddCash</source>
-        <translation>ddCash için yapılandırma seçeneklerini değiştirin</translation>
+        <source>Modify configuration options for LocalTrade</source>
+        <translation>LocalTrade için yapılandırma seçeneklerini değiştirin</translation>
     </message>
     <message>
-        <source>Sign messages with your ddCash addresses to prove you own them</source>
-        <translation>Sahip olduğunuzu kanıtlamak için mesajlarınızı ddCash adresleriyle imzalayın</translation>
+        <source>Sign messages with your LocalTrade addresses to prove you own them</source>
+        <translation>Sahip olduğunuzu kanıtlamak için mesajlarınızı LocalTrade adresleriyle imzalayın</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified ddCash addresses</source>
-        <translation>Belirtilen ddCash adresleriyle imzalanmış olduklarından emin olmak için iletileri doğrulayın</translation>
+        <source>Verify messages to ensure they were signed with specified LocalTrade addresses</source>
+        <translation>Belirtilen LocalTrade adresleriyle imzalanmış olduklarından emin olmak için iletileri doğrulayın</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -686,8 +686,8 @@
         <translation>Açık Masternode yapılandırma dosyası</translation>
     </message>
     <message>
-        <source>Open a ddCash: URI or payment request</source>
-        <translation>Bir ddCash: URI veya ödeme isteği açın</translation>
+        <source>Open a LocalTrade: URI or payment request</source>
+        <translation>Bir LocalTrade: URI veya ödeme isteği açın</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -698,12 +698,12 @@
         <translation>Kaşif penceresini engelle</translation>
     </message>
     <message>
-        <source>Show the ddCash Core help message to get a list with possible ddCash command-line options</source>
-        <translation>Olası ddCash komut satırı seçeneklerine sahip bir liste almak için ddCash Core yardım mesajını gösterin</translation>
+        <source>Show the LocalTrade Core help message to get a list with possible LocalTrade command-line options</source>
+        <translation>Olası LocalTrade komut satırı seçeneklerine sahip bir liste almak için LocalTrade Core yardım mesajını gösterin</translation>
     </message>
     <message>
-        <source>ddCash Core client</source>
-        <translation>ddCash Core istemci</translation>
+        <source>LocalTrade Core client</source>
+        <translation>LocalTrade Core istemci</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -834,8 +834,8 @@ Adres: %4</translation>
         <translation>TextLabel</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ddcash2.conf).</source>
-        <translation>Tüm işlemler gösterilmez. Tüm işlemleri görmek için yapılandırma dosyasında txindex = 1 ayarlamanız gerekir (ddcash2.conf).
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (localtrade2.conf).</source>
+        <translation>Tüm işlemler gösterilmez. Tüm işlemleri görmek için yapılandırma dosyasında txindex = 1 ayarlamanız gerekir (localtrade2.conf).
 </translation>
     </message>
 </context>
@@ -1121,8 +1121,8 @@ Adres: %4</translation>
         <translation>versiyon</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash CORE</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade CORE</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -1144,16 +1144,16 @@ Adres: %4</translation>
         <translation>Hoşgeldiniz</translation>
     </message>
     <message>
-        <source>Welcome to ddCash Core.</source>
-        <translation>ddCash Core'a hoşgeldiniz.</translation>
+        <source>Welcome to LocalTrade Core.</source>
+        <translation>LocalTrade Core'a hoşgeldiniz.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
         <translation>Varsayılan veri dosyasını kullanınız</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash CORE</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade CORE</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1508,8 +1508,8 @@ Adres: %4</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The ddCash address to sign the message with</source>
-        <translation>Ile mesaj imzalamak için ddCash adresi
+        <source>The LocalTrade address to sign the message with</source>
+        <translation>Ile mesaj imzalamak için LocalTrade adresi
 </translation>
     </message>
     <message>
@@ -1538,17 +1538,17 @@ Adres: %4</translation>
 </translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ddCash address</source>
-        <translation>Bu ddCash adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala
+        <source>Sign the message to prove you own this LocalTrade address</source>
+        <translation>Bu LocalTrade adresinin sahibi olduğunuzu kanıtlamak için mesajı imzala
 </translation>
     </message>
     <message>
-        <source>The ddCash address the message was signed with</source>
-        <translation>Mesajın imzalandığı ddCash adresi</translation>
+        <source>The LocalTrade address the message was signed with</source>
+        <translation>Mesajın imzalandığı LocalTrade adresi</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ddCash address</source>
-        <translation>Belirtilen ddCash adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
+        <source>Verify the message to ensure it was signed with the specified LocalTrade address</source>
+        <translation>Belirtilen LocalTrade adresi ile imzalanmış olduğundan emin olmak için iletiyi doğrulayın</translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1587,8 +1587,8 @@ Adres: %4</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash CORE</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade CORE</translation>
     </message>
     </context>
 <context>
@@ -1694,7 +1694,7 @@ Adres: %4</translation>
     </message>
     </context>
 <context>
-    <name>ddcash-core</name>
+    <name>localtrade-core</name>
     <message>
         <source>Error</source>
         <translation>hata</translation>

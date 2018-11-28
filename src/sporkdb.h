@@ -2,8 +2,8 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef ddCash_CSPORKDB_H
-#define ddCash_CSPORKDB_H
+#ifndef LocalTrade_CSPORKDB_H
+#define LocalTrade_CSPORKDB_H
 
 #include <boost/filesystem/path.hpp>
 #include "leveldbwrapper.h"
@@ -25,4 +25,4 @@ public:
 };
 
 
-#endif //ddCash_CSPORKDB_H
+#endif //LocalTrade_CSPORKDB_H

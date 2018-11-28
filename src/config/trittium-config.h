@@ -1,9 +1,9 @@
-/* src/config/ddcash-config.h.  Generated from ddcash-config.h.in by configure.  */
-/* src/config/ddcash-config.h.in.  Generated from configure.ac by autoheader.  */
+/* src/config/localtrade-config.h.  Generated from localtrade-config.h.in by configure.  */
+/* src/config/localtrade-config.h.in.  Generated from configure.ac by autoheader.  */
 
-#ifndef ddCashCOIN_CONFIG_H
+#ifndef LocalTradeCOIN_CONFIG_H
 
-#define ddCashCOIN_CONFIG_H
+#define LocalTradeCOIN_CONFIG_H
 
 /* Define if building universal (internal helper macro) */
 /* #undef AC_APPLE_UNIVERSAL_BUILD */
@@ -268,16 +268,16 @@
 #define LT_OBJDIR ".libs/"
 
 /* Define to the address where bug reports for this package should be sent. */
-#define PACKAGE_BUGREPORT "www.ddcash.io"
+#define PACKAGE_BUGREPORT "www.localtrade.io"
 
 /* Define to the full name of this package. */
-#define PACKAGE_NAME "ddCash Core"
+#define PACKAGE_NAME "LocalTrade Core"
 
 /* Define to the full name and version of this package. */
-#define PACKAGE_STRING "ddCash Core 2.0.1"
+#define PACKAGE_STRING "LocalTrade Core 2.0.1"
 
 /* Define to the one symbol short name of this package. */
-#define PACKAGE_TARNAME "ddcash"
+#define PACKAGE_TARNAME "localtrade"
 
 /* Define to the home page for this package. */
 #define PACKAGE_URL ""
@@ -340,4 +340,4 @@
 /* Define for large files, on AIX-style hosts. */
 /* #undef _LARGE_FILES */
 
-#endif //ddCashCOIN_CONFIG_H
+#endif //LocalTradeCOIN_CONFIG_H

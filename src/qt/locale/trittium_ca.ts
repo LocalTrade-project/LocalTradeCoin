@@ -62,12 +62,12 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your ddCash addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les teves adreces ddCash per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
+        <source>These are your LocalTrade addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les teves adreces LocalTrade per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
     </message>
     <message>
-        <source>These are your ddCash addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Aquestes són les teves adreces ddCash per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
+        <source>These are your LocalTrade addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Aquestes són les teves adreces LocalTrade per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,16 +168,16 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>ddCash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ddCashs from being stolen by malware infecting your computer.</source>
-        <translation>ddCash es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus ddCash de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>LocalTrade will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LocalTrades from being stolen by malware infecting your computer.</source>
+        <translation>LocalTrade es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus LocalTrade de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Estàs segur que vols encriptar el moneder?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ddCash&lt;/b&gt;!</source>
-        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES ddCashS&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LocalTrade&lt;/b&gt;!</source>
+        <translation>Avís: Si encripteu el vostre moneder i perdeu la contrasenya, &lt;b&gt;PERDREU TOTS ELS VOSTRES LocalTradeS&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -418,12 +418,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Core</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Core</translation>
     </message>
     <message>
-        <source>Send coins to a ddCash address</source>
-        <translation>Envia monedes a una adreça ddCash</translation>
+        <source>Send coins to a LocalTrade address</source>
+        <translation>Envia monedes a una adreça LocalTrade</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -434,8 +434,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About ddCash Core</source>
-        <translation>&amp;Sobre ddCash Core</translation>
+        <source>&amp;About LocalTrade Core</source>
+        <translation>&amp;Sobre LocalTrade Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -458,12 +458,12 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>ddCash Core client</source>
-        <translation>Client ddCash core</translation>
+        <source>LocalTrade Core client</source>
+        <translation>Client LocalTrade core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to ddCash network</source>
-        <translation><numerusform>%n connexió activa a la xarxa ddCash</numerusform><numerusform>%n connexions actives a la xarxa ddCash</numerusform></translation>
+        <source>%n active connection(s) to LocalTrade network</source>
+        <translation><numerusform>%n connexió activa a la xarxa LocalTrade</numerusform><numerusform>%n connexions actives a la xarxa LocalTrade</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -814,8 +814,8 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid ddCash address.</source>
-        <translation>L'adreça introduïda "%1" no és una adreça ddCash vàlida.</translation>
+        <source>The entered address "%1" is not a valid LocalTrade address.</source>
+        <translation>L'adreça introduïda "%1" no és una adreça LocalTrade vàlida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -860,16 +860,16 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Core</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About ddCash Core</source>
-        <translation>Sobre ddCash Core</translation>
+        <source>About LocalTrade Core</source>
+        <translation>Sobre LocalTrade Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -915,12 +915,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to ddCash Core.</source>
-        <translation>Benvingut a ddCash Core.</translation>
+        <source>Welcome to LocalTrade Core.</source>
+        <translation>Benvingut a LocalTrade Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where ddCash Core will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del ddCash Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where LocalTrade Core will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del LocalTrade Core.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -931,8 +931,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Core</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1142,24 +1142,24 @@
         <translation>Si us plau, selecciona un nivell de privacitat.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 ddCash</source>
-        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 ddCash</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 LocalTrade</source>
+        <translation>Utilitza 2 masternodes diferents per mesclar fons de fins a 10000 LocalTrade</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 ddCash</source>
-        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 ddCash</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 LocalTrade</source>
+        <translation>Utilitza 8 masternodes diferents per mesclar fons de fins a 10000 LocalTrade</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Utilitza 16 masternodes diferents</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 ddCash to anonymize 10000 ddCash</source>
-        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 ddCash per anonimitzar 10000 ddCash</translation>
+        <source>This option is the quickest and will cost about ~0.025 LocalTrade to anonymize 10000 LocalTrade</source>
+        <translation>Aquesta opció és la més ràpida i té un cost d'uns ~0.025 LocalTrade per anonimitzar 10000 LocalTrade</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 ddCash to anonymize 10000 ddCash</source>
-        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 ddCash per anonimitzar 10000 ddCash</translation>
+        <source>This option is moderately fast and will cost about 0.05 LocalTrade to anonymize 10000 LocalTrade</source>
+        <translation>Aquesta opció és moderadament ràpida i té un cost d'uns 0.05 LocalTrade per anonimitzar 10000 LocalTrade</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
@@ -1208,8 +1208,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start ddCash after logging in to the system.</source>
-        <translation>Inicia ddCash automàticament després d'identificar-te en el sistema.</translation>
+        <source>Automatically start LocalTrade after logging in to the system.</source>
+        <translation>Inicia LocalTrade automàticament després d'identificar-te en el sistema.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1271,12 +1271,12 @@
         <translation>Total:</translation>
     </message>
     <message>
-        <source>ddCash:</source>
-        <translation>ddCash:</translation>
+        <source>LocalTrade:</source>
+        <translation>LocalTrade:</translation>
     </message>
     <message>
-        <source>zddCash:</source>
-        <translation>zddCash:</translation>
+        <source>zLocalTrade:</source>
+        <translation>zLocalTrade:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1304,20 +1304,20 @@
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>Zerocoin ddCash (zddCash)</source>
-        <translation>Zerocoin ddCash (zddCash)</translation>
+        <source>Zerocoin LocalTrade (zLocalTrade)</source>
+        <translation>Zerocoin LocalTrade (zLocalTrade)</translation>
     </message>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zddCash</source>
-        <translation>zddCash</translation>
+        <source>zLocalTrade</source>
+        <translation>zLocalTrade</translation>
     </message>
     <message>
-        <source>0.000 000 00 ddCash</source>
-        <translation>0.000 000 00 ddCash</translation>
+        <source>0.000 000 00 LocalTrade</source>
+        <translation>0.000 000 00 LocalTrade</translation>
     </message>
     <message>
         <source>Reset</source>
@@ -1332,8 +1332,8 @@
         <translation>Import:</translation>
     </message>
     <message>
-        <source>0 zddCash</source>
-        <translation>0 zddCash</translation>
+        <source>0 zLocalTrade</source>
+        <translation>0 zLocalTrade</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1719,8 +1719,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>ddCash Core is shutting down...</source>
-        <translation>ddCash Core s'està tancant...</translation>
+        <source>LocalTrade Core is shutting down...</source>
+        <translation>LocalTrade Core s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1785,8 +1785,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Core</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1984,7 +1984,7 @@
     </message>
     </context>
 <context>
-    <name>ddcash-core</name>
+    <name>localtrade-core</name>
     <message>
         <source>Can't mix while sync in progress.</source>
         <translation>No es pot mesclar mentre s'està sincronitzant.</translation>

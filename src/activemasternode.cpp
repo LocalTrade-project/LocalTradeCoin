@@ -13,7 +13,7 @@
 #include "main.h"
 #include "base58.h"
 //
-// Bootup the Masternode, look for a 5000 ddCash input and register on the network
+// Bootup the Masternode, look for a 5000 LocalTrade input and register on the network
 //
 void CActiveMasternode::ManageStatus()
 {

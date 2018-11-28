@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The ddCash developers
+// Copyright (c) 2018 The LocalTrade developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -106,7 +106,7 @@ public:
         pchMessageStart[3] = 0x66;
         vAlertPubKey = ParseHex("04c32c8ab64b43228550115a862847deb294b776a71d6395e9c49477d13eac413f022e40462770dbc665f8a32aeec2a5d87839239f9a0b91a85269f90e79ab0ccc");
         nDefaultPort = 6462;
-        //bnProofOfWorkLimit = ~uint256(0) >> 1; // ddCash starting difficulty is 1 / 2^12
+        //bnProofOfWorkLimit = ~uint256(0) >> 1; // LocalTrade starting difficulty is 1 / 2^12
         bnProofOfWorkLimit = ~uint256(0) >> 20; // Trittium starting difficulty is 1 / 2^20
         nSubsidyHalvingInterval = 2100000000;
         nMaxReorganizationDepth = 100;
@@ -114,9 +114,9 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // ddCash: 1 day
-        nTargetSpacing = 1 * 60; //ddCash: 1 minute
-        nMaturity = 15;
+        nTargetTimespan = 1 * 60; // LocalTrade: 1 day
+        nTargetSpacing = 1 * 60; //LocalTrade: 1 minute
+        nMaturity = 10;
         nMasternodeCountDrift = 20;
         nMaxMoneyOut = 100000000 * COIN; //100,000,000
 
@@ -144,9 +144,9 @@ public:
         genesis.nVersion = 1;
         genesis.nTime = 1543413680;  // 11/27/2018 @ 10:13am (UTC)
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 0;
+        genesis.nNonce = 4746;
 
-        printf("Generating genesis block...\n");
+        /* printf("Generating genesis block...\n");
         uint32_t nounce = 1;
      		while(1) {
           printf("Nounce: %d\n", nounce);
@@ -164,10 +164,10 @@ public:
        			}
      		}
         printf("genesis: %s\n",hashGenesisBlock.GetHex().c_str());
-        printf("merklehash: %s\n",genesis.hashMerkleRoot.ToString().c_str());
+        printf("merklehash: %s\n",genesis.hashMerkleRoot.ToString().c_str()); */
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000"));
-        assert(genesis.hashMerkleRoot == uint256("0x000"));
+        assert(hashGenesisBlock == uint256("0x000028258fb3f2a85f4b3bd18963c2f890b724676f90b8fd53b182a809447c9b"));
+        assert(genesis.hashMerkleRoot == uint256("0xbc2ce94abdde23e5f393e44202528c4fc31ecd80d43b2f0309b739a19af3e570"));
         //vSeeds.push_back(CDNSSeedData("213.239.221.114", "213.239.221.114"));
         //vSeeds.push_back(CDNSSeedData("13.236.225.171", "13.236.225.171"));
         //vSeeds.push_back(CDNSSeedData("13.237.74.18", "13.237.74.18"));
@@ -231,8 +231,8 @@ public:
         nRejectBlockOutdatedMajority = 75;
         nToCheckBlockUpgradeMajority = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 60; // ddCash: 1 day
-        nTargetSpacing = 1 * 60;  // ddCash: 1 minute
+        nTargetTimespan = 1 * 60; // LocalTrade: 1 day
+        nTargetSpacing = 1 * 60;  // LocalTrade: 1 minute
         nLastPOWBlock = 200;
         nMaturity = 15;
         nMasternodeCountDrift = 4;
@@ -255,9 +255,9 @@ public:
 
         vFixedSeeds.clear();
         vSeeds.clear();
-  //      vSeeds.push_back(CDNSSeedData("testnet.ddcash.io", "testnet.ddcash.io"));         // Single node address
-//        vSeeds.push_back(CDNSSeedData("testnet1.ddcash.io", "testnet1.ddcash.io"));       // Single node address
-    //    vSeeds.push_back(CDNSSeedData("testnet2.ddcash.io", "testnet2.ddcash.io"));       // Single node address
+  //      vSeeds.push_back(CDNSSeedData("testnet.localtrade.io", "testnet.localtrade.io"));         // Single node address
+//        vSeeds.push_back(CDNSSeedData("testnet1.localtrade.io", "testnet1.localtrade.io"));       // Single node address
+    //    vSeeds.push_back(CDNSSeedData("testnet2.localtrade.io", "testnet2.localtrade.io"));       // Single node address
 
 
 		base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1, 60);
@@ -319,8 +319,8 @@ public:
         nRejectBlockOutdatedMajority = 950;
         nToCheckBlockUpgradeMajority = 1000;
         nMinerThreads = 1;
-        nTargetTimespan = 24 * 60 * 60; // ddCash: 1 day
-        nTargetSpacing = 1 * 60;        // ddCash: 1 minutes
+        nTargetTimespan = 24 * 60 * 60; // LocalTrade: 1 day
+        nTargetSpacing = 1 * 60;        // LocalTrade: 1 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1515524400;
         genesis.nBits = 0x1e0ffff0;

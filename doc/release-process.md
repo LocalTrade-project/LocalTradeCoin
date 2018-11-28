@@ -24,11 +24,11 @@ Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
     git clone https://github.com/eastcoastcrypto/gitian.sigs.git
-    git clone https://github.com/eastcoastcrypto/ddcash-detached-sigs.git
+    git clone https://github.com/eastcoastcrypto/localtrade-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
-    git clone https://github.com/eastcoastcrypto/ddcash.git
+    git clone https://github.com/eastcoastcrypto/localtrade.git
 
-### ddCash maintainers/release engineers, suggestion for writing release notes
+### LocalTrade maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -49,7 +49,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./ddcash
+    pushd ./localtrade
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -83,7 +83,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../ddcash/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../localtrade/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -91,55 +91,55 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url ddcash=/path/to/ddcash,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url localtrade=/path/to/localtrade,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign ddCash Core for Linux, Windows, and OS X:
+### Build and sign LocalTrade Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit ddcash=v${VERSION} ../ddcash/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../ddcash/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/ddcash-*.tar.gz build/out/src/ddcash-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit localtrade=v${VERSION} ../localtrade/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../localtrade/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/localtrade-*.tar.gz build/out/src/localtrade-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit ddcash=v${VERSION} ../ddcash/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../ddcash/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/ddcash-*-win-unsigned.tar.gz inputs/ddcash-win-unsigned.tar.gz
-    mv build/out/ddcash-*.zip build/out/ddcash-*.exe ../
+    ./bin/gbuild --memory 3000 --commit localtrade=v${VERSION} ../localtrade/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../localtrade/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/localtrade-*-win-unsigned.tar.gz inputs/localtrade-win-unsigned.tar.gz
+    mv build/out/localtrade-*.zip build/out/localtrade-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit ddcash=v${VERSION} ../ddcash/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../ddcash/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/ddcash-*-osx-unsigned.tar.gz inputs/ddcash-osx-unsigned.tar.gz
-    mv build/out/ddcash-*.tar.gz build/out/ddcash-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit localtrade=v${VERSION} ../localtrade/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../localtrade/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/localtrade-*-osx-unsigned.tar.gz inputs/localtrade-osx-unsigned.tar.gz
+    mv build/out/localtrade-*.tar.gz build/out/localtrade-*.dmg ../
 
-    ./bin/gbuild --memory 3000 --commit ddcash=v${VERSION} ../ddcash/contrib/gitian-descriptors/gitian-aarch64.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../ddcash/contrib/gitian-descriptors/gitian-aarch64.yml
-    mv build/out/ddcash-*.tar.gz build/out/src/ddcash-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit localtrade=v${VERSION} ../localtrade/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../localtrade/contrib/gitian-descriptors/gitian-aarch64.yml
+    mv build/out/localtrade-*.tar.gz build/out/src/localtrade-*.tar.gz ../
     popd
 
 Build output expected:
 
-  1. source tarball (`ddcash-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`ddcash-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`ddcash-${VERSION}-win[32|64]-setup-unsigned.exe`, `ddcash-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`ddcash-${VERSION}-osx-unsigned.dmg`, `ddcash-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`localtrade-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`localtrade-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`localtrade-${VERSION}-win[32|64]-setup-unsigned.exe`, `localtrade-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`localtrade-${VERSION}-osx-unsigned.dmg`, `localtrade-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import ddcash/contrib/gitian-keys/*.gpg
+    gpg --import localtrade/contrib/gitian-keys/*.gpg
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../ddcash/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../ddcash/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../ddcash/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../ddcash/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../localtrade/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../localtrade/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../localtrade/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../localtrade/contrib/gitian-descriptors/gitian-aarch64.yml
     popd
 
 ### Next steps:
@@ -161,22 +161,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer ddcash-osx-unsigned.tar.gz to osx for signing
-    tar xf ddcash-osx-unsigned.tar.gz
+    transfer localtrade-osx-unsigned.tar.gz to osx for signing
+    tar xf localtrade-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf ddcash-win-unsigned.tar.gz
+    tar xf localtrade-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/ddcash-detached-sigs
+    cd ~/localtrade-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -189,25 +189,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [ddcash-detached-sigs](https://github.com/eastcoastcrypto/ddcash-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [localtrade-detached-sigs](https://github.com/eastcoastcrypto/localtrade-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../ddcash/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../ddcash/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../ddcash/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/ddcash-osx-signed.dmg ../ddcash-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../localtrade/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../localtrade/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../localtrade/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/localtrade-osx-signed.dmg ../localtrade-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../ddcash/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../ddcash/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../ddcash/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/ddcash-*win64-setup.exe ../ddcash-${VERSION}-win64-setup.exe
-    mv build/out/ddcash-*win32-setup.exe ../ddcash-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../localtrade/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../localtrade/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../localtrade/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/localtrade-*win64-setup.exe ../localtrade-${VERSION}-win64-setup.exe
+    mv build/out/localtrade-*win32-setup.exe ../localtrade-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -229,23 +229,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-ddcash-${VERSION}-aarch64-linux-gnu.tar.gz
-ddcash-${VERSION}-arm-linux-gnueabihf.tar.gz
-ddcash-${VERSION}-i686-pc-linux-gnu.tar.gz
-ddcash-${VERSION}-x86_64-linux-gnu.tar.gz
-ddcash-${VERSION}-osx64.tar.gz
-ddcash-${VERSION}-osx.dmg
-ddcash-${VERSION}.tar.gz
-ddcash-${VERSION}-win32-setup.exe
-ddcash-${VERSION}-win32.zip
-ddcash-${VERSION}-win64-setup.exe
-ddcash-${VERSION}-win64.zip
+localtrade-${VERSION}-aarch64-linux-gnu.tar.gz
+localtrade-${VERSION}-arm-linux-gnueabihf.tar.gz
+localtrade-${VERSION}-i686-pc-linux-gnu.tar.gz
+localtrade-${VERSION}-x86_64-linux-gnu.tar.gz
+localtrade-${VERSION}-osx64.tar.gz
+localtrade-${VERSION}-osx.dmg
+localtrade-${VERSION}.tar.gz
+localtrade-${VERSION}-win32-setup.exe
+localtrade-${VERSION}-win32.zip
+localtrade-${VERSION}-win64-setup.exe
+localtrade-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the ddcashcoin.com server*.
+space *do not upload these to the localtradecoin.com server*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -261,10 +261,10 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/ddcash, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/localtrade, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/eastcoastcrypto/ddCash/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/eastcoastcrypto/LocalTrade/releases/new) with a link to the archived release notes.
 
   - Celebrate

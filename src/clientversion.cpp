@@ -10,10 +10,10 @@
 
 /**
  * Name of client reported in the 'version' message. Report the same name
- * for both ddcashd and ddcash-qt, to make it harder for attackers to
+ * for both localtraded and localtrade-qt, to make it harder for attackers to
  * target servers or GUI users specifically.
  */
-const std::string CLIENT_NAME("ddCash Core");
+const std::string CLIENT_NAME("LocalTrade Core");
 
 /**
  * Client version number

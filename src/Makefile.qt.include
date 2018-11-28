@@ -1,34 +1,34 @@
-bin_PROGRAMS += qt/ddcash-qt
+bin_PROGRAMS += qt/localtrade-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# ddcash qt core #
+# localtrade qt core #
 QT_TS = \
-  qt/locale/ddcash_bg.ts \
-  qt/locale/ddcash_ca.ts \
-  qt/locale/ddcash_cs.ts \
-  qt/locale/ddcash_da.ts \
-  qt/locale/ddcash_de.ts \
-  qt/locale/ddcash_en.ts \
-  qt/locale/ddcash_en_US.ts \
-  qt/locale/ddcash_es.ts \
-  qt/locale/ddcash_fi.ts \
-  qt/locale/ddcash_fr_FR.ts \
-  qt/locale/ddcash_hr.ts \
-  qt/locale/ddcash_it.ts \
-  qt/locale/ddcash_ja.ts \
-  qt/locale/ddcash_ko_KR.ts \
-  qt/locale/ddcash_nl.ts \
-  qt/locale/ddcash_pl.ts \
-  qt/locale/ddcash_pt.ts \
-  qt/locale/ddcash_pt_BR.ts \
-  qt/locale/ddcash_ro_RO.ts \
-  qt/locale/ddcash_ru.ts \
-  qt/locale/ddcash_sk.ts \
-  qt/locale/ddcash_sv.ts \
-  qt/locale/ddcash_tr.ts \
-  qt/locale/ddcash_uk.ts \
-  qt/locale/ddcash_zh_CN.ts \
-  qt/locale/ddcash_zh_TW.ts
+  qt/locale/localtrade_bg.ts \
+  qt/locale/localtrade_ca.ts \
+  qt/locale/localtrade_cs.ts \
+  qt/locale/localtrade_da.ts \
+  qt/locale/localtrade_de.ts \
+  qt/locale/localtrade_en.ts \
+  qt/locale/localtrade_en_US.ts \
+  qt/locale/localtrade_es.ts \
+  qt/locale/localtrade_fi.ts \
+  qt/locale/localtrade_fr_FR.ts \
+  qt/locale/localtrade_hr.ts \
+  qt/locale/localtrade_it.ts \
+  qt/locale/localtrade_ja.ts \
+  qt/locale/localtrade_ko_KR.ts \
+  qt/locale/localtrade_nl.ts \
+  qt/locale/localtrade_pl.ts \
+  qt/locale/localtrade_pt.ts \
+  qt/locale/localtrade_pt_BR.ts \
+  qt/locale/localtrade_ro_RO.ts \
+  qt/locale/localtrade_ru.ts \
+  qt/locale/localtrade_sk.ts \
+  qt/locale/localtrade_sv.ts \
+  qt/locale/localtrade_tr.ts \
+  qt/locale/localtrade_uk.ts \
+  qt/locale/localtrade_zh_CN.ts \
+  qt/locale/localtrade_zh_TW.ts
 
 QT_FORMS_UI = \
   qt/forms/addressbookpage.ui \
@@ -54,7 +54,7 @@ QT_FORMS_UI = \
   qt/forms/sendcoinsentry.ui \
   qt/forms/signverifymessagedialog.ui \
   qt/forms/transactiondescdialog.ui \
-  qt/forms/zddcashcontroldialog.ui
+  qt/forms/zlocaltradecontroldialog.ui
 
 QT_MOC_CPP = \
   qt/moc_addressbookpage.cpp \
@@ -107,23 +107,23 @@ QT_MOC_CPP = \
   qt/moc_walletframe.cpp \
   qt/moc_walletmodel.cpp \
   qt/moc_walletview.cpp \
-  qt/moc_zddcashcontroldialog.cpp
+  qt/moc_zlocaltradecontroldialog.cpp
 
 BITCOIN_MM = \
   qt/macdockiconhandler.mm \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/ddcash.moc \
+  qt/localtrade.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
-QT_QRC_CPP = qt/qrc_ddcash.cpp
-QT_QRC = qt/ddcash.qrc
-QT_QRC_LOCALE_CPP = qt/qrc_ddcash_locale.cpp
-QT_QRC_LOCALE = qt/ddcash_locale.qrc
+QT_QRC_CPP = qt/qrc_localtrade.cpp
+QT_QRC = qt/localtrade.qrc
+QT_QRC_LOCALE_CPP = qt/qrc_localtrade_locale.cpp
+QT_QRC_LOCALE = qt/localtrade_locale.qrc
 
 PROTOBUF_CC = qt/paymentrequest.pb.cc
 PROTOBUF_H = qt/paymentrequest.pb.h
@@ -187,7 +187,7 @@ BITCOIN_QT_H = \
   qt/walletmodeltransaction.h \
   qt/walletview.h \
   qt/winshutdownmonitor.h \
-  qt/zddcashcontroldialog.h
+  qt/zlocaltradecontroldialog.h
 
 RES_ICONS = \
   qt/res/icons/add.png \
@@ -241,12 +241,12 @@ RES_ICONS = \
   qt/res/icons/tx_input.png \
   qt/res/icons/tx_output.png \
   qt/res/icons/tx_mined.png \
-  qt/res/icons/unit_ddcash.png \
-  qt/res/icons/unit_mddcash.png \
-  qt/res/icons/unit_uddcash.png \
-  qt/res/icons/unit_tddcash.png \
-  qt/res/icons/unit_tmddcash.png \
-  qt/res/icons/unit_tuddcash.png
+  qt/res/icons/unit_localtrade.png \
+  qt/res/icons/unit_mlocaltrade.png \
+  qt/res/icons/unit_ulocaltrade.png \
+  qt/res/icons/unit_tlocaltrade.png \
+  qt/res/icons/unit_tmlocaltrade.png \
+  qt/res/icons/unit_tulocaltrade.png
 
 BITCOIN_QT_CPP = \
   qt/bitcoinaddressvalidator.cpp \
@@ -308,7 +308,7 @@ BITCOIN_QT_CPP += \
   qt/walletmodel.cpp \
   qt/walletmodeltransaction.cpp \
   qt/walletview.cpp \
-  qt/zddcashcontroldialog.cpp
+  qt/zlocaltradecontroldialog.cpp
 
 endif
 
@@ -316,7 +316,7 @@ RES_IMAGES = \
   qt/res/images/about.png \
   qt/res/images/splash.png \
   qt/res/images/splash_testnet.png \
-  qt/res/images/ddcash_logo_horizontal.png \
+  qt/res/images/localtrade_logo_horizontal.png \
   qt/res/images/downArrow.png \
   qt/res/images/downArrow_small.png \
   qt/res/images/upArrow_small.png \
@@ -332,7 +332,7 @@ RES_CSS = \
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/ddcash-qt-res.rc
+BITCOIN_RC = qt/res/localtrade-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
@@ -352,69 +352,69 @@ QT_FORMS_H=$(join $(dir $(QT_FORMS_UI)),$(addprefix ui_, $(notdir $(QT_FORMS_UI:
 # Most files will depend on the forms and moc files as includes. Generate them
 # before anything else.
 $(QT_MOC): $(QT_FORMS_H)
-$(qt_libbitcoinqt_a_OBJECTS) $(qt_ddcash_qt_OBJECTS) : | $(QT_MOC)
+$(qt_libbitcoinqt_a_OBJECTS) $(qt_localtrade_qt_OBJECTS) : | $(QT_MOC)
 
 #Generating these with a half-written protobuf header leads to wacky results.
 #This makes sure it's done.
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# ddcash-qt binary #
-qt_ddcash_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
+# localtrade-qt binary #
+qt_localtrade_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_ddcash_qt_SOURCES = qt/ddcash.cpp
+qt_localtrade_qt_SOURCES = qt/localtrade.cpp
 if TARGET_DARWIN
-  qt_ddcash_qt_SOURCES += $(BITCOIN_MM)
+  qt_localtrade_qt_SOURCES += $(BITCOIN_MM)
 endif
 if TARGET_WINDOWS
-  qt_ddcash_qt_SOURCES += $(BITCOIN_RC)
+  qt_localtrade_qt_SOURCES += $(BITCOIN_RC)
 endif
-qt_ddcash_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
+qt_localtrade_qt_LDADD = qt/libbitcoinqt.a $(LIBBITCOIN_SERVER)
 if ENABLE_WALLET
-qt_ddcash_qt_LDADD += $(LIBBITCOIN_WALLET)
+qt_localtrade_qt_LDADD += $(LIBBITCOIN_WALLET)
 endif
 if ENABLE_ZMQ
-qt_ddcash_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
+qt_localtrade_qt_LDADD += $(LIBBITCOIN_ZMQ) $(ZMQ_LIBS)
 endif
-qt_ddcash_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBMEMENV) \
+qt_localtrade_qt_LDADD += $(LIBBITCOIN_CLI) $(LIBBITCOIN_COMMON) $(LIBBITCOIN_UTIL) $(LIBBITCOIN_CRYPTO) $(LIBBITCOIN_UNIVALUE) $(LIBBITCOIN_ZEROCOIN) $(LIBLEVELDB) $(LIBMEMENV) \
   $(BOOST_LIBS) $(QT_LIBS) $(QT_DBUS_LIBS) $(QR_LIBS) $(PROTOBUF_LIBS) $(BDB_LIBS) $(SSL_LIBS) $(CRYPTO_LIBS) $(MINIUPNPC_LIBS) $(LIBSECP256K1) \
   $(EVENT_PTHREADS_LIBS) $(EVENT_LIBS)
-qt_ddcash_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
-qt_ddcash_qt_LIBTOOLFLAGS = --tag CXX
+qt_localtrade_qt_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(QT_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
+qt_localtrade_qt_LIBTOOLFLAGS = --tag CXX
 
 #locale/foo.ts -> locale/foo.qm
 QT_QM=$(QT_TS:.ts=.qm)
 
 .SECONDARY: $(QT_QM)
 
-qt/ddcashstrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
+qt/localtradestrings.cpp: $(libbitcoin_server_a_SOURCES) $(libbitcoin_wallet_a_SOURCES) $(libbitcoin_common_a_SOURCES)
 	@test -n $(XGETTEXT) || echo "xgettext is required for updating translations"
 	$(AM_V_GEN) cd $(srcdir); XGETTEXT=$(XGETTEXT) $(PYTHON) ../share/qt/extract_strings_qt.py $^
 
-translate: qt/ddcashstrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
+translate: qt/localtradestrings.cpp $(QT_FORMS_UI) $(QT_FORMS_UI) $(BITCOIN_QT_CPP) $(BITCOIN_QT_H) $(BITCOIN_MM)
 	@test -n $(LUPDATE) || echo "lupdate is required for updating translations"
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/ddcash_en.ts
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(LUPDATE) $^ -locations relative -no-obsolete -ts qt/locale/localtrade_en.ts
 
 $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 	@test -f $(RCC)
 	@test -f $(@D)/$(<F) || cp -f $< $(@D)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name ddcash_locale $(@D)/$(<F) | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name localtrade_locale $(@D)/$(<F) | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name ddcash $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name localtrade $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
 
 CLEANFILES += $(CLEAN_QT)
 
-ddcash_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_ddcash_qt_OBJECTS) qt/ddcash-qt$(EXEEXT) $(LIBBITCOINQT)
+localtrade_qt_clean: FORCE
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_localtrade_qt_OBJECTS) qt/localtrade-qt$(EXEEXT) $(LIBBITCOINQT)
 
-ddcash_qt : qt/ddcash-qt$(EXEEXT)
+localtrade_qt : qt/localtrade-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

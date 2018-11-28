@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2018 The ddCash developers
+// Copyright (c) 2018 The LocalTrade developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -238,10 +238,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop ddCash server.");
+            "\nStop LocalTrade server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "ddCash server stopping";
+    return "LocalTrade server stopping";
 }
 
 
@@ -319,36 +319,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* ddCash features */
-        {"ddcash", "masternode", &masternode, true, true, false},
-        {"ddcash", "listmasternodes", &listmasternodes, true, true, false},
-        {"ddcash", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"ddcash", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"ddcash", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"ddcash", "masternodedebug", &masternodedebug, true, true, false},
-        {"ddcash", "startmasternode", &startmasternode, true, true, false},
-        {"ddcash", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"ddcash", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"ddcash", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"ddcash", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"ddcash", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"ddcash", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"ddcash", "mnbudget", &mnbudget, true, true, false},
-        {"ddcash", "preparebudget", &preparebudget, true, true, false},
-        {"ddcash", "submitbudget", &submitbudget, true, true, false},
-        {"ddcash", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"ddcash", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"ddcash", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"ddcash", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"ddcash", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"ddcash", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"ddcash", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"ddcash", "checkbudgets", &checkbudgets, true, true, false},
-        {"ddcash", "mnsync", &mnsync, true, true, false},
-        {"ddcash", "spork", &spork, true, true, false},
-        {"ddcash", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* LocalTrade features */
+        {"localtrade", "masternode", &masternode, true, true, false},
+        {"localtrade", "listmasternodes", &listmasternodes, true, true, false},
+        {"localtrade", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"localtrade", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"localtrade", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"localtrade", "masternodedebug", &masternodedebug, true, true, false},
+        {"localtrade", "startmasternode", &startmasternode, true, true, false},
+        {"localtrade", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"localtrade", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"localtrade", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"localtrade", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"localtrade", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"localtrade", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"localtrade", "mnbudget", &mnbudget, true, true, false},
+        {"localtrade", "preparebudget", &preparebudget, true, true, false},
+        {"localtrade", "submitbudget", &submitbudget, true, true, false},
+        {"localtrade", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"localtrade", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"localtrade", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"localtrade", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"localtrade", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"localtrade", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"localtrade", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"localtrade", "checkbudgets", &checkbudgets, true, true, false},
+        {"localtrade", "mnsync", &mnsync, true, true, false},
+        {"localtrade", "spork", &spork, true, true, false},
+        {"localtrade", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"ddcash", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"localtrade", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -627,16 +627,16 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use ddcashd, or the -server option to ddcash-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use localtraded, or the -server option to localtrade-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
-                                               "rpcuser=ddcashrpc\n"
+                                               "rpcuser=localtraderpc\n"
                                                "rpcpassword=%s\n"
                                                "(you do not need to remember this password)\n"
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"ddCash Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"LocalTrade Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1087,7 +1087,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> ddcash-cli " + methodname + " " + args + "\n";
+    return "> localtrade-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)

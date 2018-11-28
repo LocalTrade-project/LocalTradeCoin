@@ -9,8 +9,8 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between ddcash-cli and ddcashd)
- * of a given instance of the ddCash system.
+ * CBaseChainParams defines the base parameters (shared between localtrade-cli and localtraded)
+ * of a given instance of the LocalTrade system.
  */
 class CBaseChainParams
 {

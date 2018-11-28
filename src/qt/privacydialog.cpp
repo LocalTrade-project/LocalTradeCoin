@@ -14,7 +14,7 @@
 #include "sendcoinsentry.h"
 #include "walletmodel.h"
 #include "coincontrol.h"
-#include "zddcashcontroldialog.h"
+#include "zlocaltradecontroldialog.h"
 #include "spork.h"
 
 #include <QClipboard>
@@ -30,14 +30,14 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
     nDisplayUnit = 0; // just make sure it's not unitialized
     ui->setupUi(this);
 
-    // "Spending 999999 zddCash ought to be enough for anybody." - Bill Gates, 2017
-    ui->zddCashpayAmount->setValidator( new QDoubleValidator(0.0, 21000000.0, 20, this) );
+    // "Spending 999999 zLocalTrade ought to be enough for anybody." - Bill Gates, 2017
+    ui->zLocalTradepayAmount->setValidator( new QDoubleValidator(0.0, 21000000.0, 20, this) );
     ui->labelMintAmountValue->setValidator( new QIntValidator(0, 999999, this) );
 
     // Default texts for (mini-) coincontrol
     ui->labelCoinControlQuantity->setText (tr("Coins automatically selected"));
     ui->labelCoinControlAmount->setText (tr("Coins automatically selected"));
-    ui->labelzddCashSyncStatus->setText("(" + tr("out of sync") + ")");
+    ui->labelzLocalTradeSyncStatus->setText("(" + tr("out of sync") + ")");
 
     // Sunken frame for minting messages
     ui->TEMintStatus->setFrameStyle(QFrame::StyledPanel | QFrame::Sunken);
@@ -66,7 +66,7 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
     ui->labelzDenom7Text->setText("Denom. with value <b>1000</b>:");
     ui->labelzDenom8Text->setText("Denom. with value <b>5000</b>:");
 
-    // ddCash settings
+    // LocalTrade settings
     QSettings settings;
     if (!settings.contains("nSecurityLevel")){
         nSecurityLevel = 42;
@@ -94,11 +94,11 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
 
     //temporary disable for maintenance
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        ui->pushButtonMintzddCash->setEnabled(false);
-        ui->pushButtonMintzddCash->setToolTip(tr("zddCash is currently disabled due to maintenance."));
+        ui->pushButtonMintzLocalTrade->setEnabled(false);
+        ui->pushButtonMintzLocalTrade->setToolTip(tr("zLocalTrade is currently disabled due to maintenance."));
 
-        ui->pushButtonSpendzddCash->setEnabled(false);
-        ui->pushButtonSpendzddCash->setToolTip(tr("zddCash is currently disabled due to maintenance."));
+        ui->pushButtonSpendzLocalTrade->setEnabled(false);
+        ui->pushButtonSpendzLocalTrade->setToolTip(tr("zLocalTrade is currently disabled due to maintenance."));
     }
 }
 
@@ -137,18 +137,18 @@ void PrivacyDialog::on_addressBookButton_clicked()
     dlg.setModel(walletModel->getAddressTableModel());
     if (dlg.exec()) {
         ui->payTo->setText(dlg.getReturnValue());
-        ui->zddCashpayAmount->setFocus();
+        ui->zLocalTradepayAmount->setFocus();
     }
 }
 
-void PrivacyDialog::on_pushButtonMintzddCash_clicked()
+void PrivacyDialog::on_pushButtonMintzLocalTrade_clicked()
 {
     if (!walletModel || !walletModel->getOptionsModel())
         return;
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
         QMessageBox::information(this, tr("Mint Zerocoin"),
-                                 tr("zddCash is currently undergoing maintenance."), QMessageBox::Ok,
+                                 tr("zLocalTrade is currently undergoing maintenance."), QMessageBox::Ok,
                                  QMessageBox::Ok);
         return;
     }
@@ -176,7 +176,7 @@ void PrivacyDialog::on_pushButtonMintzddCash_clicked()
         return;
     }
 
-    ui->TEMintStatus->setPlainText(tr("Minting ") + ui->labelMintAmountValue->text() + " zddCash...");
+    ui->TEMintStatus->setPlainText(tr("Minting ") + ui->labelMintAmountValue->text() + " zLocalTrade...");
     ui->TEMintStatus->repaint ();
 
     int64_t nTime = GetTimeMillis();
@@ -194,7 +194,7 @@ void PrivacyDialog::on_pushButtonMintzddCash_clicked()
     double fDuration = (double)(GetTimeMillis() - nTime)/1000.0;
 
     // Minting successfully finished. Show some stats for entertainment.
-    QString strStatsHeader = tr("Successfully minted ") + ui->labelMintAmountValue->text() + tr(" zddCash in ") +
+    QString strStatsHeader = tr("Successfully minted ") + ui->labelMintAmountValue->text() + tr(" zLocalTrade in ") +
                              QString::number(fDuration) + tr(" sec. Used denominations:\n");
 
     // Clear amount to avoid double spending when accidentally clicking twice
@@ -253,7 +253,7 @@ void PrivacyDialog::on_pushButtonSpentReset_clicked()
     return;
 }
 
-void PrivacyDialog::on_pushButtonSpendzddCash_clicked()
+void PrivacyDialog::on_pushButtonSpendzLocalTrade_clicked()
 {
 
     if (!walletModel || !walletModel->getOptionsModel() || !pwalletMain)
@@ -261,7 +261,7 @@ void PrivacyDialog::on_pushButtonSpendzddCash_clicked()
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
         QMessageBox::information(this, tr("Mint Zerocoin"),
-                                 tr("zddCash is currently undergoing maintenance."), QMessageBox::Ok, QMessageBox::Ok);
+                                 tr("zLocalTrade is currently undergoing maintenance."), QMessageBox::Ok, QMessageBox::Ok);
         return;
     }
 
@@ -273,24 +273,24 @@ void PrivacyDialog::on_pushButtonSpendzddCash_clicked()
             // Unlock wallet was cancelled
             return;
         }
-        // Wallet is unlocked now, sedn zddCash
-        sendzddCash();
+        // Wallet is unlocked now, sedn zLocalTrade
+        sendzLocalTrade();
         return;
     }
-    // Wallet already unlocked or not encrypted at all, send zddCash
-    sendzddCash();
+    // Wallet already unlocked or not encrypted at all, send zLocalTrade
+    sendzLocalTrade();
 }
 
-void PrivacyDialog::on_pushButtonZddCashControl_clicked()
+void PrivacyDialog::on_pushButtonZLocalTradeControl_clicked()
 {
-    ZddCashControlDialog* zddCashControl = new ZddCashControlDialog(this);
-    zddCashControl->setModel(walletModel);
-    zddCashControl->exec();
+    ZLocalTradeControlDialog* zLocalTradeControl = new ZLocalTradeControlDialog(this);
+    zLocalTradeControl->setModel(walletModel);
+    zLocalTradeControl->exec();
 }
 
-void PrivacyDialog::setZddCashControlLabels(int64_t nAmount, int nQuantity)
+void PrivacyDialog::setZLocalTradeControlLabels(int64_t nAmount, int nQuantity)
 {
-    ui->labelzddCashSelected_int->setText(QString::number(nAmount));
+    ui->labelzLocalTradeSelected_int->setText(QString::number(nAmount));
     ui->labelQuantitySelected_int->setText(QString::number(nQuantity));
 }
 
@@ -299,7 +299,7 @@ static inline int64_t roundint64(double d)
     return (int64_t)(d > 0 ? d + 0.5 : d - 0.5);
 }
 
-void PrivacyDialog::sendzddCash()
+void PrivacyDialog::sendzLocalTrade()
 {
     QSettings settings;
 
@@ -310,31 +310,31 @@ void PrivacyDialog::sendzddCash()
     }
     else{
         if (!address.IsValid()) {
-            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid ddCash Address"), QMessageBox::Ok, QMessageBox::Ok);
+            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid LocalTrade Address"), QMessageBox::Ok, QMessageBox::Ok);
             ui->payTo->setFocus();
             return;
         }
     }
 
     // Double is allowed now
-    double dAmount = ui->zddCashpayAmount->text().toDouble();
+    double dAmount = ui->zLocalTradepayAmount->text().toDouble();
     CAmount nAmount = roundint64(dAmount* COIN);
 
     // Check amount validity
     if (!MoneyRange(nAmount) || nAmount <= 0.0) {
         QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid Send Amount"), QMessageBox::Ok, QMessageBox::Ok);
-        ui->zddCashpayAmount->setFocus();
+        ui->zLocalTradepayAmount->setFocus();
         return;
     }
 
-    // Convert change to zddCash
+    // Convert change to zLocalTrade
     bool fMintChange = ui->checkBoxMintChange->isChecked();
 
     // Persist minimize change setting
     fMinimizeChange = ui->checkBoxMinimizeChange->isChecked();
     settings.setValue("fMinimizeChange", fMinimizeChange);
 
-    // Warn for additional fees if amount is not an integer and change as zddCash is requested
+    // Warn for additional fees if amount is not an integer and change as zLocalTrade is requested
     bool fWholeNumber = floor(dAmount) == dAmount;
     double dzFee = 0.0;
 
@@ -343,7 +343,7 @@ void PrivacyDialog::sendzddCash()
 
     if(!fWholeNumber && fMintChange){
         QString strFeeWarning = "You've entered an amount with fractional digits and want the change to be converted to Zerocoin.<br /><br /><b>";
-        strFeeWarning += QString::number(dzFee, 'f', 8) + " ddCash </b>will be added to the standard transaction fees!<br />";
+        strFeeWarning += QString::number(dzFee, 'f', 8) + " LocalTrade </b>will be added to the standard transaction fees!<br />";
         QMessageBox::StandardButton retval = QMessageBox::question(this, tr("Confirm additional Fees"),
             strFeeWarning,
             QMessageBox::Yes | QMessageBox::Cancel,
@@ -351,7 +351,7 @@ void PrivacyDialog::sendzddCash()
 
         if (retval != QMessageBox::Yes) {
             // Sending canceled
-            ui->zddCashpayAmount->setFocus();
+            ui->zLocalTradepayAmount->setFocus();
             return;
         }
     }
@@ -370,7 +370,7 @@ void PrivacyDialog::sendzddCash()
 
     // General info
     QString strQuestionString = tr("Are you sure you want to send?<br /><br />");
-    QString strAmount = "<b>" + QString::number(dAmount, 'f', 8) + " zddCash</b>";
+    QString strAmount = "<b>" + QString::number(dAmount, 'f', 8) + " zLocalTrade</b>";
     QString strAddress = tr(" to address ") + QString::fromStdString(address.ToString()) + strAddressLabel + " <br />";
 
     if(ui->payTo->text().isEmpty()){
@@ -396,13 +396,13 @@ void PrivacyDialog::sendzddCash()
     ui->TEMintStatus->setPlainText(tr("Spending Zerocoin.\nComputationally expensive, might need several minutes depending on the selected Security Level and your hardware. \nPlease be patient..."));
     ui->TEMintStatus->repaint();
 
-    // use mints from zddCash selector if applicable
+    // use mints from zLocalTrade selector if applicable
     vector<CZerocoinMint> vMintsSelected;
-    if (!ZddCashControlDialog::listSelectedMints.empty()) {
-        vMintsSelected = ZddCashControlDialog::GetSelectedMints();
+    if (!ZLocalTradeControlDialog::listSelectedMints.empty()) {
+        vMintsSelected = ZLocalTradeControlDialog::GetSelectedMints();
     }
 
-    // Spend zddCash
+    // Spend zLocalTrade
     CWalletTx wtxNew;
     CZerocoinSpendReceipt receipt;
     bool fSuccess = false;
@@ -418,7 +418,7 @@ void PrivacyDialog::sendzddCash()
     // Display errors during spend
     if (!fSuccess) {
         int nNeededSpends = receipt.GetNeededSpends(); // Number of spends we would need for this transaction
-        const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zddCash transaction
+        const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zLocalTrade transaction
         if (nNeededSpends > nMaxSpends) {
             QString strStatusMessage = tr("Too much inputs (") + QString::number(nNeededSpends, 10) + tr(") needed. \nMaximum allowed: ") + QString::number(nMaxSpends, 10);
             strStatusMessage += tr("\nEither mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.");
@@ -429,20 +429,20 @@ void PrivacyDialog::sendzddCash()
             QMessageBox::warning(this, tr("Spend Zerocoin"), receipt.GetStatusMessage().c_str(), QMessageBox::Ok, QMessageBox::Ok);
             ui->TEMintStatus->setPlainText(tr("Spend Zerocoin failed with status = ") +QString::number(receipt.GetStatus(), 10) + "\n" + "Message: " + QString::fromStdString(receipt.GetStatusMessage()));
         }
-        ui->zddCashpayAmount->setFocus();
+        ui->zLocalTradepayAmount->setFocus();
         ui->TEMintStatus->repaint();
         return;
     }
 
-    // Clear zddcash selector in case it was used
-    ZddCashControlDialog::listSelectedMints.clear();
+    // Clear zlocaltrade selector in case it was used
+    ZLocalTradeControlDialog::listSelectedMints.clear();
 
     // Some statistics for entertainment
     QString strStats = "";
     CAmount nValueIn = 0;
     int nCount = 0;
     for (CZerocoinSpend spend : receipt.GetSpends()) {
-        strStats += tr("zddCash Spend #: ") + QString::number(nCount) + ", ";
+        strStats += tr("zLocalTrade Spend #: ") + QString::number(nCount) + ", ";
         strStats += tr("denomination: ") + QString::number(spend.GetDenomination()) + ", ";
         strStats += tr("serial: ") + spend.GetSerial().ToString().c_str() + "\n";
         strStats += tr("Spend is 1 of : ") + QString::number(spend.GetMintCount()) + " mints in the accumulator\n";
@@ -451,13 +451,13 @@ void PrivacyDialog::sendzddCash()
 
     CAmount nValueOut = 0;
     for (const CTxOut& txout: wtxNew.vout) {
-        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " ddCash, ";
+        strStats += tr("value out: ") + FormatMoney(txout.nValue).c_str() + " LocalTrade, ";
         nValueOut += txout.nValue;
 
         strStats += tr("address: ");
         CTxDestination dest;
         if(txout.scriptPubKey.IsZerocoinMint())
-            strStats += tr("zddCash Mint");
+            strStats += tr("zLocalTrade Mint");
         else if(ExtractDestination(txout.scriptPubKey, dest))
             strStats += tr(CBitcoinAddress(dest).ToString().c_str());
         strStats += "\n";
@@ -472,7 +472,7 @@ void PrivacyDialog::sendzddCash()
     strReturn += strStats;
 
     // Clear amount to avoid double spending when accidentally clicking twice
-    ui->zddCashpayAmount->setText ("0");
+    ui->zLocalTradepayAmount->setText ("0");
 
     ui->TEMintStatus->setPlainText(strReturn);
     ui->TEMintStatus->repaint();
@@ -616,7 +616,7 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
 
         strDenomStats = strUnconfirmed + QString::number(mapDenomBalances.at(denom)) + " x " +
                         QString::number(nCoins) + " = <b>" +
-                        QString::number(nSumPerCoin) + " zddCash </b>";
+                        QString::number(nSumPerCoin) + " zLocalTrade </b>";
 
         switch (nCoins) {
             case libzerocoin::CoinDenomination::ZQ_ONE:
@@ -654,9 +654,9 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
         nLockedBalance = walletModel->getLockedBalance();
     }
 
-    ui->labelzAvailableAmount->setText(QString::number(zerocoinBalance/COIN) + QString(" zddCash "));
-    ui->labelzAvailableAmount_2->setText(QString::number(matureZerocoinBalance/COIN) + QString(" zddCash "));
-    ui->labelzddCashAmountValue->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance - immatureBalance - nLockedBalance, false, BitcoinUnits::separatorAlways));
+    ui->labelzAvailableAmount->setText(QString::number(zerocoinBalance/COIN) + QString(" zLocalTrade "));
+    ui->labelzAvailableAmount_2->setText(QString::number(matureZerocoinBalance/COIN) + QString(" zLocalTrade "));
+    ui->labelzLocalTradeAmountValue->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance - immatureBalance - nLockedBalance, false, BitcoinUnits::separatorAlways));
 }
 
 void PrivacyDialog::updateDisplayUnit()
@@ -672,7 +672,7 @@ void PrivacyDialog::updateDisplayUnit()
 
 void PrivacyDialog::showOutOfSyncWarning(bool fShow)
 {
-    ui->labelzddCashSyncStatus->setVisible(fShow);
+    ui->labelzLocalTradeSyncStatus->setVisible(fShow);
 }
 
 void PrivacyDialog::keyPressEvent(QKeyEvent* event)

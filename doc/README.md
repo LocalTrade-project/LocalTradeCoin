@@ -1,39 +1,39 @@
-ddCash Core
+LocalTrade Core
 =====================
 
 Setup
 ---------------------
-[ddCash Core](http://ddCashcoin.com) is the original ddCash client and it builds the backbone of the network. However, it downloads and stores the entire history of ddCash transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[LocalTrade Core](http://LocalTradecoin.com) is the original LocalTrade client and it builds the backbone of the network. However, it downloads and stores the entire history of LocalTrade transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run ddCash on your native platform.
+The following are some helpful notes on how to run LocalTrade on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/ddcash-qt (GUI, 32-bit) or bin/32/ddcashd (headless, 32-bit)
-- bin/64/ddcash-qt (GUI, 64-bit) or bin/64/ddcashd (headless, 64-bit)
+- bin/32/localtrade-qt (GUI, 32-bit) or bin/32/localtraded (headless, 32-bit)
+- bin/64/localtrade-qt (GUI, 64-bit) or bin/64/localtraded (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run ddcash-qt.exe.
+Unpack the files into a directory, and then run localtrade-qt.exe.
 
 ### OSX
 
-Drag ddCash-Qt to your applications folder, and then run ddCash-Qt.
+Drag LocalTrade-Qt to your applications folder, and then run LocalTrade-Qt.
 
 ### Need Help?
 
-* See the documentation at the [ddCash Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [LocalTrade Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php) or on the [ddCash Forum](http://ddCashcoin.com/).
-* Join one of our Discord groups [ddCash Discord Groups](https://discord.gg/YcnvMqt).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php) or on the [LocalTrade Forum](http://LocalTradecoin.com/).
+* Join one of our Discord groups [LocalTrade Discord Groups](https://discord.gg/YcnvMqt).
 
 Building
 ---------------------
-The following are developer notes on how to build ddCash on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build LocalTrade on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -41,7 +41,7 @@ The following are developer notes on how to build ddCash on your native platform
 
 Development
 ---------------------
-The ddCash repo's [root README](https://github.com/eastcoastcrypto/ddCash/blob/master/README.md) contains relevant information on the development process and automated testing.
+The LocalTrade repo's [root README](https://github.com/eastcoastcrypto/LocalTrade/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -56,7 +56,7 @@ The ddCash repo's [root README](https://github.com/eastcoastcrypto/ddCash/blob/m
 ### Resources
 
 * Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) .
-* Join the [ddCash-Dev] Discord groups [ddCash Discord Groups](https://discord.gg/YcnvMqt).
+* Join the [LocalTrade-Dev] Discord groups [LocalTrade Discord Groups](https://discord.gg/YcnvMqt).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

@@ -11,9 +11,9 @@
 static const int MODEL_UPDATE_DELAY = 250;
 
 /* AskPassphraseDialog -- Maximum passphrase length */
-static const int MAX_PASSddCashASE_SIZE = 1024;
+static const int MAX_PASSLocalTradeASE_SIZE = 1024;
 
-/* ddCash GUI -- Size of icons in status bar */
+/* LocalTrade GUI -- Size of icons in status bar */
 static const int STATUSBAR_ICONSIZE = 16;
 
 static const bool DEFAULT_SPLASHSCREEN = true;
@@ -48,9 +48,9 @@ static const int MAX_URI_LENGTH = 255;
 /* Number of frames in spinner animation */
 #define SPINNER_FRAMES 35
 
-#define QAPP_ORG_NAME "ddCash"
-#define QAPP_ORG_DOMAIN "ddcash.org"
-#define QAPP_APP_NAME_DEFAULT "ddCash-Qt"
-#define QAPP_APP_NAME_TESTNET "ddCash-Qt-testnet"
+#define QAPP_ORG_NAME "LocalTrade"
+#define QAPP_ORG_DOMAIN "localtrade.org"
+#define QAPP_APP_NAME_DEFAULT "LocalTrade-Qt"
+#define QAPP_APP_NAME_TESTNET "LocalTrade-Qt-testnet"
 
 #endif // BITCOIN_QT_GUICONSTANTS_H

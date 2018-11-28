@@ -62,12 +62,12 @@
         <translation>Vastaanottavat osoitteet</translation>
     </message>
     <message>
-        <source>These are your ddCash addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Nämä ovat sinun ddCash osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
+        <source>These are your LocalTrade addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Nämä ovat sinun LocalTrade osoitteesi maksujen lähetystä varten. Tarkista aina määrä ja vastaanottava osoite ennen kolikoiden lähettämistä.</translation>
     </message>
     <message>
-        <source>These are your ddCash addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Nämä ovat sinun ddCash osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
+        <source>These are your LocalTrade addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Nämä ovat sinun LocalTrade osoitteesi maksujen vastaanottamista varten. On suositeltavaa käyttää uutta vastaanottavaa osoitetta jokaiselle uudelle rahansiirrolle.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Vahvista lompakon salaus</translation>
     </message>
     <message>
-        <source>ddCash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ddCashs from being stolen by malware infecting your computer.</source>
-        <translation>ddCash sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella ddCashien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
+        <source>LocalTrade will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LocalTrades from being stolen by malware infecting your computer.</source>
+        <translation>LocalTrade sulkeutuu salausprosessin ajaksi. Muista, että lompakon salaus ei voi täysin suojella LocalTradeien varkaudelta, jos tietokoneesi sisältää haittaohjelmia.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Oletko varma että tahdot salata lompakkosi?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ddCash&lt;/b&gt;!</source>
-        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki ddCashisi&lt;/b&gt;</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LocalTrade&lt;/b&gt;!</source>
+        <translation>Varoitus: Jos salaat lompakkosi ja unohdat salausavaimesi, &lt;b&gt;menetät kaikki LocalTradeisi&lt;/b&gt;</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,8 +235,8 @@
         <translation>&amp;BIP 38 Salaus</translation>
     </message>
     <message>
-        <source>Enter a ddCash Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Syötä ddCash osoite, jonnka tahtoisit salata käyttäen BIP 38.
+        <source>Enter a LocalTrade Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Syötä LocalTrade osoite, jonnka tahtoisit salata käyttäen BIP 38.
 Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityisavaimen.</translation>
     </message>
     <message>
@@ -244,8 +244,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Osoite:</translation>
     </message>
     <message>
-        <source>The ddCash address to sign the message with</source>
-        <translation>ddCash osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The LocalTrade address to sign the message with</source>
+        <translation>LocalTrade osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -276,8 +276,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ddCash address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän ddCash osoitteen</translation>
+        <source>Sign the message to prove you own this LocalTrade address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän LocalTrade osoitteen</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -300,12 +300,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Syötä BIP 38 salattu yksityisavain. Syötä salausavain laatikkoon. Paina Avaa Salaus tuottaaksesi yksityisavaimen. Kun avain on dekryptattu, painamalla "Import osoite" lisää tämän yksityisavaimen lompakkoon.</translation>
     </message>
     <message>
-        <source>The ddCash address the message was signed with</source>
-        <translation>ddCash osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The LocalTrade address the message was signed with</source>
+        <translation>LocalTrade osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ddCash address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla ddCash osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified LocalTrade address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla LocalTrade osoitteella.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -591,16 +591,16 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>&amp;Apua</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Ydin</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Ydin</translation>
     </message>
     <message>
-        <source>Send coins to a ddCash address</source>
-        <translation>Lähetä kolikkoja ddCash osoitteeseen</translation>
+        <source>Send coins to a LocalTrade address</source>
+        <translation>Lähetä kolikkoja LocalTrade osoitteeseen</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ddcash: URIs)</source>
-        <translation>Pyydä maksuja (Generoi QR koodeja ja ddcash: URIja)</translation>
+        <source>Request payments (generates QR codes and localtrade: URIs)</source>
+        <translation>Pyydä maksuja (Generoi QR koodeja ja localtrade: URIja)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -611,24 +611,24 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Selaa masternodeja</translation>
     </message>
     <message>
-        <source>&amp;About ddCash Core</source>
-        <translation>ddCash Core &amp;ytimestä</translation>
+        <source>&amp;About LocalTrade Core</source>
+        <translation>LocalTrade Core &amp;ytimestä</translation>
     </message>
     <message>
-        <source>Show information about ddCash Core</source>
-        <translation>Näytä tietoja ddCash Ytimestä</translation>
+        <source>Show information about LocalTrade Core</source>
+        <translation>Näytä tietoja LocalTrade Ytimestä</translation>
     </message>
     <message>
-        <source>Modify configuration options for ddCash</source>
-        <translation>Muokkaa konfiguraatio vaihtoehtoja ddCash:lle</translation>
+        <source>Modify configuration options for LocalTrade</source>
+        <translation>Muokkaa konfiguraatio vaihtoehtoja LocalTrade:lle</translation>
     </message>
     <message>
-        <source>Sign messages with your ddCash addresses to prove you own them</source>
+        <source>Sign messages with your LocalTrade addresses to prove you own them</source>
         <translation>Allekirjoita viestejä todistaaksesi, että omistat ne.</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified ddCash addresses</source>
-        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä ddCash osoiteella.</translation>
+        <source>Verify messages to ensure they were signed with specified LocalTrade addresses</source>
+        <translation>Vahvista viestit varmistaaksesi, että ne allekirjoitettiin tietyllä LocalTrade osoiteella.</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -659,8 +659,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Avaa Masternode konfiguraatiotiedosto</translation>
     </message>
     <message>
-        <source>Open a ddCash: URI or payment request</source>
-        <translation>Avaa ddCash: URI tai pyydä maksua</translation>
+        <source>Open a LocalTrade: URI or payment request</source>
+        <translation>Avaa LocalTrade: URI tai pyydä maksua</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -671,12 +671,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Lohkon tutkija näkymä</translation>
     </message>
     <message>
-        <source>Show the ddCash Core help message to get a list with possible ddCash command-line options</source>
-        <translation>Näytä ddCash Ydin apuviesti saadaksesi lista mahdollisista ddCash komentolinja komennoista.</translation>
+        <source>Show the LocalTrade Core help message to get a list with possible LocalTrade command-line options</source>
+        <translation>Näytä LocalTrade Ydin apuviesti saadaksesi lista mahdollisista LocalTrade komentolinja komennoista.</translation>
     </message>
     <message>
-        <source>ddCash Core client</source>
-        <translation>ddCash Ydin asiakasohjelma</translation>
+        <source>LocalTrade Core client</source>
+        <translation>LocalTrade Ydin asiakasohjelma</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -934,8 +934,8 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Ydin</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Ydin</translation>
     </message>
     <message>
         <source>Usage:</source>
@@ -953,12 +953,12 @@ Syötä salausavain laatikon keskelle. Paina salaa tuottaaksesi salatun yksityis
         <translation>Tervetuloa</translation>
     </message>
     <message>
-        <source>Welcome to ddCash Core.</source>
-        <translation>Tervetuloa ddCash Ytimeen.</translation>
+        <source>Welcome to LocalTrade Core.</source>
+        <translation>Tervetuloa LocalTrade Ytimeen.</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Ydin</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Ydin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1135,32 +1135,32 @@ Please check the address and try again.</source>
         <translation>Valitse yksityisyyden taso.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 ddCash</source>
-        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 ddCash</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 LocalTrade</source>
+        <translation>Käytä 2 erillistä masternodea sekoittaaksesi enintään 10000 LocalTrade</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 ddCash</source>
-        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 ddCash</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 LocalTrade</source>
+        <translation>Käytä 8 erillistä masternodea sekoittaaksesi enintään 10000 LocalTrade</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Käytä 16 erillistä masternodea</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 ddCash to anonymize 10000 ddCash</source>
-        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 ddCash anonymoidaksesi 10000 ddCash</translation>
+        <source>This option is the quickest and will cost about ~0.025 LocalTrade to anonymize 10000 LocalTrade</source>
+        <translation>Tämä vaihtoehto on nopein ja maksaa noin ~0.025 LocalTrade anonymoidaksesi 10000 LocalTrade</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 ddCash to anonymize 10000 ddCash</source>
-        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 ddCash anonymoidaksesi 10000 ddCash</translation>
+        <source>This option is moderately fast and will cost about 0.05 LocalTrade to anonymize 10000 LocalTrade</source>
+        <translation>Tämä vaihtoehto on suhteellisen nopea ja maksaa 0.05 LocalTrade anonymoidaksesi 10000 LocalTrade</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Tämä on hitain ja turvallisin vaihtoehto. Täydesti anonymisoiminen ei maksa mitään.</translation>
     </message>
     <message>
-        <source>0.1 ddCash per 10000 ddCash you anonymize.</source>
-        <translation>0.1 per 10000 ddCash, jotka anonymisoit.</translation>
+        <source>0.1 LocalTrade per 10000 LocalTrade you anonymize.</source>
+        <translation>0.1 per 10000 LocalTrade, jotka anonymisoit.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1209,12 +1209,12 @@ Please check the address and try again.</source>
         <translation>Ekspertti</translation>
     </message>
     <message>
-        <source>Automatically start ddCash after logging in to the system.</source>
-        <translation>Automaattisesti käynnistä ddCash kun kirjaudut sisään.</translation>
+        <source>Automatically start LocalTrade after logging in to the system.</source>
+        <translation>Automaattisesti käynnistä LocalTrade kun kirjaudut sisään.</translation>
     </message>
     <message>
-        <source>&amp;Start ddCash on system login</source>
-        <translation>&amp;Aloita ddCash järjestelmän kirjautumisessa</translation>
+        <source>&amp;Start LocalTrade on system login</source>
+        <translation>&amp;Aloita LocalTrade järjestelmän kirjautumisessa</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1233,12 +1233,12 @@ Please check the address and try again.</source>
         <translation>&amp;Verkko</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting ddCash.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting LocalTrade.</source>
         <translation>Käyttöliittymän kielen voi säätää täällä. Tämä asetus tulee voimaan uudelleenkäynnistettyäsi lompakon.</translation>
     </message>
     <message>
-        <source>Connect to the ddCash network through a SOCKS5 proxy.</source>
-        <translation>Yhdistä ddCash verkkoon SOCKS5 proxyn kautta</translation>
+        <source>Connect to the LocalTrade network through a SOCKS5 proxy.</source>
+        <translation>Yhdistä LocalTrade verkkoon SOCKS5 proxyn kautta</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1542,8 +1542,8 @@ Please check the address and try again.</source>
         <translation>Lohko ketju</translation>
     </message>
     <message>
-        <source>Open the ddCash debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Avaa ddCash debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
+        <source>Open the LocalTrade debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Avaa LocalTrade debug loki nykyisestä sijainnista. Tämä voi kestää muutaman sekunnin suurille lokeille</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -1654,8 +1654,8 @@ Please check the address and try again.</source>
         <translation>Ulos:</translation>
     </message>
     <message>
-        <source>Welcome to the ddCash RPC console.</source>
-        <translation>Tervetuloa ddCash RPC konsoliin.</translation>
+        <source>Welcome to the LocalTrade RPC console.</source>
+        <translation>Tervetuloa LocalTrade RPC konsoliin.</translation>
     </message>
     <message>
         <source>never</source>
@@ -1697,12 +1697,12 @@ Please check the address and try again.</source>
         <translation>Vaihtoehtoinen nimike uudelle vastaanottavalle osoitteelle</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the ddCash network.</source>
-        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana ddCash verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the LocalTrade network.</source>
+        <translation>Vaihtoehtoinen viesti joka liitetään maksupyyntöön, joka näytetään kun pyyntö avataan. Huomio: Viestiä ei lähetetä maksun mukana LocalTrade verkolle.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the ddCash network.</source>
-        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana ddCash  verkolle.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the LocalTrade network.</source>
+        <translation>Vaihtoehtoinen viesti, joka liitetään maksupyyntöö, joka näytetään kun pyyntö avataan. &lt;br&gt; Huomio: Tätä viestiä ei lähetetä maksun mukana LocalTrade  verkolle.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -1898,8 +1898,8 @@ Please check the address and try again.</source>
         <translation>Muutos:</translation>
     </message>
     <message>
-        <source>0 ddCash</source>
-        <translation>0 ddCash</translation>
+        <source>0 LocalTrade</source>
+        <translation>0 LocalTrade</translation>
     </message>
     <message>
         <source>Choose...</source>
@@ -1982,8 +1982,8 @@ Please check the address and try again.</source>
         <translation>käyttää</translation>
     </message>
     <message>
-        <source>Warning: Invalid ddCash address</source>
-        <translation>Varoitus: Virheellinen ddCash osoite</translation>
+        <source>Warning: Invalid LocalTrade address</source>
+        <translation>Varoitus: Virheellinen LocalTrade osoite</translation>
     </message>
     <message>
         <source>Are you sure you want to send?</source>
@@ -2029,8 +2029,8 @@ Please check the address and try again.</source>
         <translation>Tämä on normaali maksu.</translation>
     </message>
     <message>
-        <source>The ddCash address to send the payment to</source>
-        <translation>ddCash osoite johon maksu lähetetään</translation>
+        <source>The LocalTrade address to send the payment to</source>
+        <translation>LocalTrade osoite johon maksu lähetetään</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2072,8 +2072,8 @@ Please check the address and try again.</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>ddCash Core is shutting down...</source>
-        <translation>ddCash core sammuu...</translation>
+        <source>LocalTrade Core is shutting down...</source>
+        <translation>LocalTrade core sammuu...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2091,8 +2091,8 @@ Please check the address and try again.</source>
         <translation>Voit allekirjoittaa viestejä osoitteillasi todistaaksesi, että omistat ne. Ole varovainen ettet allekirjoita mitään kummallista, sillä kalasteluyritykset saattavat yrittää huijata sinut luovuttamaan tietoja. Allekirjoita vain täysin yksityiskohtaisia sanomia, jotka hyväksyt.</translation>
     </message>
     <message>
-        <source>The ddCash address to sign the message with</source>
-        <translation>ddCash osoite, jolla viesti allekirjoitetaan</translation>
+        <source>The LocalTrade address to sign the message with</source>
+        <translation>LocalTrade osoite, jolla viesti allekirjoitetaan</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2123,16 +2123,16 @@ Please check the address and try again.</source>
         <translation>Kopioi nykyinen allekirjoitus järjestelmän leikepöydälle</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ddCash address</source>
-        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän ddCash osoitteen</translation>
+        <source>Sign the message to prove you own this LocalTrade address</source>
+        <translation>Allekirjoita viesti todistaaksesi, että omistat tämän LocalTrade osoitteen</translation>
     </message>
     <message>
-        <source>The ddCash address the message was signed with</source>
-        <translation>ddCash osoite, jolla viesti allekirjoitettiin</translation>
+        <source>The LocalTrade address the message was signed with</source>
+        <translation>LocalTrade osoite, jolla viesti allekirjoitettiin</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ddCash address</source>
-        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla ddCash osoitteella.</translation>
+        <source>Verify the message to ensure it was signed with the specified LocalTrade address</source>
+        <translation>Vahvista että viesti on allekirjoitettu kyseessä olevalla LocalTrade osoitteella.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2214,8 +2214,8 @@ Please check the address and try again.</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Ydin</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Ydin</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2230,8 +2230,8 @@ Please check the address and try again.</source>
         <translation>Dash Core kehittäjät</translation>
     </message>
     <message>
-        <source>The ddCash Core developers</source>
-        <translation>ddCash core kehittäjät</translation>
+        <source>The LocalTrade Core developers</source>
+        <translation>LocalTrade core kehittäjät</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -2541,7 +2541,7 @@ Please check the address and try again.</source>
     </message>
     </context>
 <context>
-    <name>ddcash-core</name>
+    <name>localtrade-core</name>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
         <translation>Varoitus: Verkko ei näytä olevan samaa mieltä! Jotkin mainaajat saattavat kokea ongelmia.</translation>
@@ -2591,8 +2591,8 @@ Please check the address and try again.</source>
         <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko korruptoitunut</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of ddCash Core</source>
-        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version ddCash Coresta</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of LocalTrade Core</source>
+        <translation>Virhe ladattaessa wallet.dat tiedostoa: Lompakko vaatii uudemman version LocalTrade Coresta</translation>
     </message>
     <message>
         <source>Error reading from database, shutting down.</source>

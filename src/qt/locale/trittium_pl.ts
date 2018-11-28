@@ -148,8 +148,8 @@
         <translation>Czy na pewno chcesz zakodować portfel?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ddCash&lt;/b&gt;!</source>
-        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE ddCash!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LocalTrade&lt;/b&gt;!</source>
+        <translation>Ostrzeżenie: Jeżeli zakodujesz portfel i stracisz do niego hasło , UTRACISZ WSZYSTKIE LocalTrade!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ddCash address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres ddCash jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this LocalTrade address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres LocalTrade jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,16 +518,16 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>&amp;Rdzeń ddCash</translation>
+        <source>LocalTrade Core</source>
+        <translation>&amp;Rdzeń LocalTrade</translation>
     </message>
     <message>
-        <source>Send coins to a ddCash address</source>
-        <translation>Wyślij monety do adresu ddCash</translation>
+        <source>Send coins to a LocalTrade address</source>
+        <translation>Wyślij monety do adresu LocalTrade</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ddcash: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i ddcash:URI)</translation>
+        <source>Request payments (generates QR codes and localtrade: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i localtrade:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About ddCash Core</source>
+        <source>&amp;About LocalTrade Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about ddCash Core</source>
+        <source>Show information about LocalTrade Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for ddCash</source>
-        <translation>Modyfikuj opcje konfiguracji ddCash</translation>
+        <source>Modify configuration options for LocalTrade</source>
+        <translation>Modyfikuj opcje konfiguracji LocalTrade</translation>
     </message>
     <message>
-        <source>Sign messages with your ddCash addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami ddCash, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your LocalTrade addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami LocalTrade, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified ddCash addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu ddCash</translation>
+        <source>Verify messages to ensure they were signed with specified LocalTrade addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu LocalTrade</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a ddCash: URI or payment request</source>
-        <translation>OtwórzddCashX: URI i żądanie zapłaty</translation>
+        <source>Open a LocalTrade: URI or payment request</source>
+        <translation>OtwórzLocalTradeX: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the ddCash Core help message to get a list with possible ddCash command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia ddCash, aby dostać listę możliwych opcji ddCash command-line</translation>
+        <source>Show the LocalTrade Core help message to get a list with possible LocalTrade command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia LocalTrade, aby dostać listę możliwych opcji LocalTrade command-line</translation>
     </message>
     <message>
-        <source>ddCash Core client</source>
-        <translation>Rdzeń ddCash klient</translation>
+        <source>LocalTrade Core client</source>
+        <translation>Rdzeń LocalTrade klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -912,8 +912,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>ddCash Core</source>
-        <translation>&amp;Rdzeń ddCash</translation>
+        <source>LocalTrade Core</source>
+        <translation>&amp;Rdzeń LocalTrade</translation>
     </message>
     </context>
 <context>
@@ -927,8 +927,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>&amp;Rdzeń ddCash</translation>
+        <source>LocalTrade Core</source>
+        <translation>&amp;Rdzeń LocalTrade</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1188,12 +1188,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start ddCash after logging in to the system.</source>
-        <translation>Automatycznie uruchom ddCash po zalogowaniu do systemu</translation>
+        <source>Automatically start LocalTrade after logging in to the system.</source>
+        <translation>Automatycznie uruchom LocalTrade po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start ddCash on system login</source>
-        <translation>&amp;Uruchom ddCash podczas logowania do systemu</translation>
+        <source>&amp;Start LocalTrade on system login</source>
+        <translation>&amp;Uruchom LocalTrade podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1212,18 +1212,18 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting ddCash.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie ddCash</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting LocalTrade.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie LocalTrade</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/ddcash-project/ddcash-project-translations</source>
+https://www.transifex.com/localtrade-project/localtrade-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/ddcash-project/ddcash-project-translations </translation>
+https://www.transifex.com/localtrade-project/localtrade-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the ddCash network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią ddCash poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the LocalTrade network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią LocalTrade poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1461,8 +1461,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations </translati
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a ddCash address (e.g. %1)</source>
-        <translation>Wprowadź adres ddCash (np. %1)</translation>
+        <source>Enter a LocalTrade address (e.g. %1)</source>
+        <translation>Wprowadź adres LocalTrade (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations </translati
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ddCash address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres ddCash jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this LocalTrade address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres LocalTrade jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1935,8 +1935,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations </translati
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>ddCash Core</source>
-        <translation>&amp;Rdzeń ddCash</translation>
+        <source>LocalTrade Core</source>
+        <translation>&amp;Rdzeń LocalTrade</translation>
     </message>
     </context>
 <context>
@@ -2034,7 +2034,7 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations </translati
     </message>
     </context>
 <context>
-    <name>ddcash-core</name>
+    <name>localtrade-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

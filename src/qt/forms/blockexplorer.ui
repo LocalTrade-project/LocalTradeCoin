@@ -168,7 +168,7 @@
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources>
-  <include location="../ddcash.qrc"/>
+  <include location="../localtrade.qrc"/>
  </resources>
  <connections/>
 </ui>

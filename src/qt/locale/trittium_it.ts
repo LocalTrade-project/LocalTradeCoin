@@ -62,12 +62,12 @@
         <translation>Indirizzi di ricezione</translation>
     </message>
     <message>
-        <source>These are your ddCash addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Questi sono gli indirizzi ddCash per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
+        <source>These are your LocalTrade addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Questi sono gli indirizzi LocalTrade per l'invio di pagamenti. Controlla sempre l'importo e l'indirizzo di ricezione prima di inviare valuta.</translation>
     </message>
     <message>
-        <source>These are your ddCash addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Questi sono gli indirizzi ddCash per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
+        <source>These are your LocalTrade addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Questi sono gli indirizzi LocalTrade per la ricezione di pagamenti. Si raccomanda di utilizzare un indirizzo diverso per ogni transazione.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Conferma cifratura portafoglio</translation>
     </message>
     <message>
-        <source>ddCash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ddCashs from being stolen by malware infecting your computer.</source>
-        <translation>ddCash verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi ddCash dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
+        <source>LocalTrade will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LocalTrades from being stolen by malware infecting your computer.</source>
+        <translation>LocalTrade verrà ora chiuso per completare il processo di cifratura. Ricorda che crittografare il tuo portafoglio non protegge completamente i tuoi LocalTrade dal furto da parte di software malevoli che potrebbero infettare il tuo computer.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Confermi di voler crittografare il portafoglio?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ddCash&lt;/b&gt;!</source>
-        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI ddCash&lt;7b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LocalTrade&lt;/b&gt;!</source>
+        <translation>Attenzione: Se crittografi il portafoglio e poi perdi la parola d'ordine, &lt;b&gt;PERDERAI TUTTI I TUOI LocalTrade&lt;7b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Criptato</translation>
     </message>
     <message>
-        <source>Enter a ddCash Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Inserisci un indirizzo ddCash che desideri crittografare utilizzando BIP 38. Inserisci una passphrase nella casella centrale. Premi Cripta per calcolare la chiave privata crittografata.</translation>
+        <source>Enter a LocalTrade Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Inserisci un indirizzo LocalTrade che desideri crittografare utilizzando BIP 38. Inserisci una passphrase nella casella centrale. Premi Cripta per calcolare la chiave privata crittografata.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Indirizzo:</translation>
     </message>
     <message>
-        <source>The ddCash address to sign the message with</source>
-        <translation>L'indirizzo ddCash per firmare il messaggio con</translation>
+        <source>The LocalTrade address to sign the message with</source>
+        <translation>L'indirizzo LocalTrade per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ddCash address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo ddCash</translation>
+        <source>Sign the message to prove you own this LocalTrade address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo LocalTrade</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Immettere la chiave privata codificata BIP 38. Inserire la passphrase nella casella centrale. Fare clic su Decripta Chiave per calcolare la chiave privata. Dopo che la chiave viene decrittata, cliccando su "Importa indirizzo" verrà aggiunta questa chiave privata al portafoglio.</translation>
     </message>
     <message>
-        <source>The ddCash address the message was signed with</source>
-        <translation>L'indirizzo ddCash con cui è stato firmato il messaggio</translation>
+        <source>The LocalTrade address the message was signed with</source>
+        <translation>L'indirizzo LocalTrade con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ddCash address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo ddCash specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified LocalTrade address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo LocalTrade specificato </translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -590,16 +590,16 @@
         <translation>Schede degli strumenti</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Core</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Core</translation>
     </message>
     <message>
-        <source>Send coins to a ddCash address</source>
-        <translation>Invia monete all' indirizzo ddCash</translation>
+        <source>Send coins to a LocalTrade address</source>
+        <translation>Invia monete all' indirizzo LocalTrade</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ddcash: URIs)</source>
-        <translation>Richiedi pagamenti (genera codici QR e ddcash: URIs)</translation>
+        <source>Request payments (generates QR codes and localtrade: URIs)</source>
+        <translation>Richiedi pagamenti (genera codici QR e localtrade: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -610,24 +610,24 @@
         <translation>Esplora i masternodes</translation>
     </message>
     <message>
-        <source>&amp;About ddCash Core</source>
-        <translation>&amp;Informazioni ddCash Core</translation>
+        <source>&amp;About LocalTrade Core</source>
+        <translation>&amp;Informazioni LocalTrade Core</translation>
     </message>
     <message>
-        <source>Show information about ddCash Core</source>
-        <translation>Visualizza informazioni su ddCash Core</translation>
+        <source>Show information about LocalTrade Core</source>
+        <translation>Visualizza informazioni su LocalTrade Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for ddCash</source>
-        <translation>Modifica le opzioni di configurazione per ddCash</translation>
+        <source>Modify configuration options for LocalTrade</source>
+        <translation>Modifica le opzioni di configurazione per LocalTrade</translation>
     </message>
     <message>
-        <source>Sign messages with your ddCash addresses to prove you own them</source>
-        <translation>Firma i messaggi con i tuoi indirizzi ddCash per dimostrare di essere il proprietario </translation>
+        <source>Sign messages with your LocalTrade addresses to prove you own them</source>
+        <translation>Firma i messaggi con i tuoi indirizzi LocalTrade per dimostrare di essere il proprietario </translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified ddCash addresses</source>
-        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi ddCash specifici</translation>
+        <source>Verify messages to ensure they were signed with specified LocalTrade addresses</source>
+        <translation>Verifica i messaggi per assicurarsi che siano stati firmati con indirizzi LocalTrade specifici</translation>
     </message>
     <message>
         <source>Encrypt and decrypt private keys using a passphrase</source>
@@ -638,16 +638,16 @@
         <translation>Impostazioni MultiSend</translation>
     </message>
     <message>
-        <source>Open a ddCash: URI or payment request</source>
-        <translation>Apri un ddCash: URI o richiesta di pagamento</translation>
+        <source>Open a LocalTrade: URI or payment request</source>
+        <translation>Apri un LocalTrade: URI o richiesta di pagamento</translation>
     </message>
     <message>
         <source>Block explorer window</source>
         <translation>Finestra Block Explorer</translation>
     </message>
     <message>
-        <source>Show the ddCash Core help message to get a list with possible ddCash command-line options</source>
-        <translation>Mostra il messaggio di aiuto ddCash Core per ottenere un elenco con le possibili opzioni di riga di comando ddCash</translation>
+        <source>Show the LocalTrade Core help message to get a list with possible LocalTrade command-line options</source>
+        <translation>Mostra il messaggio di aiuto LocalTrade Core per ottenere un elenco con le possibili opzioni di riga di comando LocalTrade</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -753,8 +753,8 @@ MultiSend: %1</translation>
         <translation>Cerca</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ddcash2.conf).</source>
-        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (ddcash2.conf)</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (localtrade2.conf).</source>
+        <translation>Non tutte le transazioni verranno visualizzate. Per vedere tutte le transazioni è necessario aggiungere txindex=1 nel file di configurazione (localtrade2.conf)</translation>
     </message>
 </context>
 <context>
@@ -888,8 +888,8 @@ MultiSend: %1</translation>
         <translation>versione</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Core</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
@@ -915,8 +915,8 @@ MultiSend: %1</translation>
         <translation>Benvenuto</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Core</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1144,8 +1144,8 @@ MultiSend: %1</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The ddCash address to sign the message with</source>
-        <translation>L'indirizzo ddCash per firmare il messaggio con</translation>
+        <source>The LocalTrade address to sign the message with</source>
+        <translation>L'indirizzo LocalTrade per firmare il messaggio con</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1168,16 +1168,16 @@ MultiSend: %1</translation>
         <translation>Copiare la firma corrente negli Appunti di sistema</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ddCash address</source>
-        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo ddCash</translation>
+        <source>Sign the message to prove you own this LocalTrade address</source>
+        <translation>Firmare il messaggio per dimostrare di possedere questo indirizzo LocalTrade</translation>
     </message>
     <message>
-        <source>The ddCash address the message was signed with</source>
-        <translation>L'indirizzo ddCash con cui è stato firmato il messaggio</translation>
+        <source>The LocalTrade address the message was signed with</source>
+        <translation>L'indirizzo LocalTrade con cui è stato firmato il messaggio</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ddCash address</source>
-        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo ddCash specificato </translation>
+        <source>Verify the message to ensure it was signed with the specified LocalTrade address</source>
+        <translation>Verificare il messaggio per assicurarsi che sia stato firmato con l'indirizzo LocalTrade specificato </translation>
     </message>
     <message>
         <source>Reset all sign message fields</source>
@@ -1215,8 +1215,8 @@ MultiSend: %1</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Core</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Core</translation>
     </message>
     </context>
 <context>
@@ -1314,7 +1314,7 @@ MultiSend: %1</translation>
     <name>ZPhrControlDialog</name>
     </context>
 <context>
-    <name>ddcash-core</name>
+    <name>localtrade-core</name>
     <message>
         <source>Error</source>
         <translation>Errore</translation>

@@ -2,11 +2,11 @@
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_NOTIFIddCashR_H
-#define BITCOIN_QT_NOTIFIddCashR_H
+#ifndef BITCOIN_QT_NOTIFILocalTradeR_H
+#define BITCOIN_QT_NOTIFILocalTradeR_H
 
 #if defined(HAVE_CONFIG_H)
-#include "config/ddcash-config.h"
+#include "config/localtrade-config.h"
 #endif
 
 #include <QIcon>
@@ -75,4 +75,4 @@ private:
 #endif
 };
 
-#endif // BITCOIN_QT_NOTIFIddCashR_H
+#endif // BITCOIN_QT_NOTIFILocalTradeR_H

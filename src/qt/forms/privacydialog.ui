@@ -31,7 +31,7 @@
      <item>
       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0,0">
        <item>
-        <widget class="QLabel" name="zddCashLabel">
+        <widget class="QLabel" name="zLocalTradeLabel">
          <property name="minimumSize">
           <size>
            <width>460</width>
@@ -52,13 +52,13 @@
           </font>
          </property>
          <property name="toolTip">
-          <string>ddCash which were anonymized via Zerocin Protocol</string>
+          <string>LocalTrade which were anonymized via Zerocin Protocol</string>
          </property>
          <property name="autoFillBackground">
           <bool>true</bool>
          </property>
          <property name="text">
-          <string>Zerocoin ddCash (zddCash)</string>
+          <string>Zerocoin LocalTrade (zLocalTrade)</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -74,7 +74,7 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_3">
                <item>
-                <widget class="QLabel" name="labelzddCashActions">
+                <widget class="QLabel" name="labelzLocalTradeActions">
                  <property name="font">
                   <font>
                    <pointsize>12</pointsize>
@@ -83,7 +83,7 @@
                   </font>
                  </property>
                  <property name="text">
-                  <string>zddCash Actions:</string>
+                  <string>zLocalTrade Actions:</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -91,9 +91,9 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzddCashSyncStatus">
+                <widget class="QLabel" name="labelzLocalTradeSyncStatus">
                  <property name="toolTip">
-                  <string>The displayed information may be out of date. Your wallet automatically synchronizes with the ddCash network after a connection is established, but this process has not completed yet.</string>
+                  <string>The displayed information may be out of date. Your wallet automatically synchronizes with the LocalTrade network after a connection is established, but this process has not completed yet.</string>
                  </property>
                  <property name="styleSheet">
                   <string notr="true">QLabel { color: red; }</string>
@@ -137,7 +137,7 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_4">
                <item>
-                <widget class="QPushButton" name="pushButtonMintzddCash">
+                <widget class="QPushButton" name="pushButtonMintzLocalTrade">
                  <property name="minimumSize">
                   <size>
                    <width>131</width>
@@ -145,10 +145,10 @@
                   </size>
                  </property>
                  <property name="toolTip">
-                  <string>Enter an amount of ddCash to convert (mint) to zddCash</string>
+                  <string>Enter an amount of LocalTrade to convert (mint) to zLocalTrade</string>
                  </property>
                  <property name="text">
-                  <string>Convert ddCash to zddCash</string>
+                  <string>Convert LocalTrade to zLocalTrade</string>
                  </property>
                 </widget>
                </item>
@@ -169,16 +169,16 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzddCash_2">
+                <widget class="QLabel" name="labelzLocalTrade_2">
                  <property name="text">
-                  <string>zddCash</string>
+                  <string>zLocalTrade</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzddCashAmountText">
+                <widget class="QLabel" name="labelzLocalTradeAmountText">
                  <property name="toolTip">
-                  <string>Available Balance are coins (ddCash) which are confirmed and not locked or Masternode collaterals.</string>
+                  <string>Available Balance are coins (LocalTrade) which are confirmed and not locked or Masternode collaterals.</string>
                  </property>
                  <property name="text">
                   <string>Available Balance:</string>
@@ -189,12 +189,12 @@
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzddCashAmountValue">
+                <widget class="QLabel" name="labelzLocalTradeAmountValue">
                  <property name="toolTip">
-                  <string>Enter an amount of ddCash to convert to zddCash</string>
+                  <string>Enter an amount of LocalTrade to convert to zLocalTrade</string>
                  </property>
                  <property name="text">
-                  <string>0.000 000 00 ddCash</string>
+                  <string>0.000 000 00 LocalTrade</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -223,7 +223,7 @@
                   </size>
                  </property>
                  <property name="toolTip">
-                  <string>Reset Zerocoin (zddCash) Wallet DB. Deletes transactions that did not make it into the blockchain.</string>
+                  <string>Reset Zerocoin (zLocalTrade) Wallet DB. Deletes transactions that did not make it into the blockchain.</string>
                  </property>
                  <property name="text">
                   <string>Reset</string>
@@ -370,7 +370,7 @@
                     <enum>Qt::ActionsContextMenu</enum>
                    </property>
                    <property name="text">
-                    <string notr="true">0.00 ddCash</string>
+                    <string notr="true">0.00 LocalTrade</string>
                    </property>
                    <property name="textInteractionFlags">
                     <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -474,21 +474,21 @@
                 <number>0</number>
                </property>
                <item>
-                <widget class="QPushButton" name="pushButtonZddCashControl">
+                <widget class="QPushButton" name="pushButtonZLocalTradeControl">
                  <property name="text">
-                  <string>zddCash Control</string>
+                  <string>zLocalTrade Control</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzddCashSelected">
+                <widget class="QLabel" name="labelzLocalTradeSelected">
                  <property name="text">
-                  <string>zddCash Selected:</string>
+                  <string>zLocalTrade Selected:</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzddCashSelected_int">
+                <widget class="QLabel" name="labelzLocalTradeSelected_int">
                  <property name="text">
                   <string>0</string>
                  </property>
@@ -542,7 +542,7 @@
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_6">
                <item>
-                <widget class="QPushButton" name="pushButtonSpendzddCash">
+                <widget class="QPushButton" name="pushButtonSpendzLocalTrade">
                  <property name="minimumSize">
                   <size>
                    <width>131</width>
@@ -550,17 +550,17 @@
                   </size>
                  </property>
                  <property name="toolTip">
-                  <string>Send zddCash. Without 'Pay To:' address creates payments to yourself.</string>
+                  <string>Send zLocalTrade. Without 'Pay To:' address creates payments to yourself.</string>
                  </property>
                  <property name="text">
-                  <string>Send zddCash</string>
+                  <string>Send zLocalTrade</string>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLabel" name="labelzddCashBalanceText">
+                <widget class="QLabel" name="labelzLocalTradeBalanceText">
                  <property name="toolTip">
-                  <string>Available (mature and spendable) zddCash for spending</string>
+                  <string>Available (mature and spendable) zLocalTrade for spending</string>
                  </property>
                  <property name="text">
                   <string>Available Balance:</string>
@@ -579,12 +579,12 @@
                   </font>
                  </property>
                  <property name="toolTip">
-                  <string>Available (mature and spendable) zddCash for spending
+                  <string>Available (mature and spendable) zLocalTrade for spending
 
-zddCash are mature when they have more than 20 confirmations AND more than 1 mints of the same denomination after them were minted</string>
+zLocalTrade are mature when they have more than 20 confirmations AND more than 1 mints of the same denomination after them were minted</string>
                  </property>
                  <property name="text">
-                  <string>0 zddCash</string>
+                  <string>0 zLocalTrade</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -607,7 +607,7 @@ zddCash are mature when they have more than 20 confirmations AND more than 1 min
                <item>
                 <widget class="QLabel" name="labelSecurityLevel">
                  <property name="toolTip">
-                  <string>Security Level for Zerocoin (zddCash) Transactions. More is better, but needs more time and resources.</string>
+                  <string>Security Level for Zerocoin (zLocalTrade) Transactions. More is better, but needs more time and resources.</string>
                  </property>
                  <property name="frameShape">
                   <enum>QFrame::Box</enum>
@@ -695,7 +695,7 @@ zddCash are mature when they have more than 20 confirmations AND more than 1 min
                     </size>
                    </property>
                    <property name="toolTip">
-                    <string>The ddCash address to send the payment to. Creates local payment to yourself when empty.</string>
+                    <string>The LocalTrade address to send the payment to. Creates local payment to yourself when empty.</string>
                    </property>
                   </widget>
                  </item>
@@ -708,7 +708,7 @@ zddCash are mature when they have more than 20 confirmations AND more than 1 min
                     <string/>
                    </property>
                    <property name="icon">
-                    <iconset resource="../ddcash.qrc">
+                    <iconset resource="../localtrade.qrc">
                      <normaloff>:/icons/address-book</normaloff>:/icons/address-book</iconset>
                    </property>
                    <property name="shortcut">
@@ -725,7 +725,7 @@ zddCash are mature when they have more than 20 confirmations AND more than 1 min
                     <string/>
                    </property>
                    <property name="icon">
-                    <iconset resource="../ddcash.qrc">
+                    <iconset resource="../localtrade.qrc">
                      <normaloff>:/icons/editpaste</normaloff>:/icons/editpaste</iconset>
                    </property>
                    <property name="shortcut">
@@ -784,15 +784,15 @@ zddCash are mature when they have more than 20 confirmations AND more than 1 min
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
                  </property>
                  <property name="buddy">
-                  <cstring>zddCashpayAmount</cstring>
+                  <cstring>zLocalTradepayAmount</cstring>
                  </property>
                 </widget>
                </item>
                <item>
-                <widget class="QLineEdit" name="zddCashpayAmount"/>
+                <widget class="QLineEdit" name="zLocalTradepayAmount"/>
                </item>
                <item>
-                <widget class="QLabel" name="labelzddCash">
+                <widget class="QLabel" name="labelzLocalTrade">
                  <property name="minimumSize">
                   <size>
                    <width>55</width>
@@ -800,7 +800,7 @@ zddCash are mature when they have more than 20 confirmations AND more than 1 min
                   </size>
                  </property>
                  <property name="text">
-                  <string>zddCash</string>
+                  <string>zLocalTrade</string>
                  </property>
                 </widget>
                </item>
@@ -833,7 +833,7 @@ zddCash are mature when they have more than 20 confirmations AND more than 1 min
                   <enum>Qt::LeftToRight</enum>
                  </property>
                  <property name="text">
-                  <string>Convert Change Back to zddCash (might cost additional fees)</string>
+                  <string>Convert Change Back to zLocalTrade (might cost additional fees)</string>
                  </property>
                 </widget>
                </item>
@@ -886,7 +886,7 @@ zddCash are mature when they have more than 20 confirmations AND more than 1 min
              <item>
               <layout class="QHBoxLayout" name="horizontalLayout_21">
                <item>
-                <widget class="QLabel" name="labelzddCashStats">
+                <widget class="QLabel" name="labelzLocalTradeStats">
                  <property name="font">
                   <font>
                    <pointsize>12</pointsize>
@@ -895,10 +895,10 @@ zddCash are mature when they have more than 20 confirmations AND more than 1 min
                   </font>
                  </property>
                  <property name="toolTip">
-                  <string>Information about the available zddCash funds.</string>
+                  <string>Information about the available zLocalTrade funds.</string>
                  </property>
                  <property name="text">
-                  <string>zddCash Stats:</string>
+                  <string>zLocalTrade Stats:</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -960,10 +960,10 @@ zddCash are mature when they have more than 20 confirmations AND more than 1 min
                   </font>
                  </property>
                  <property name="toolTip">
-                  <string>Total Balance including unconfirmed and immature zddCash</string>
+                  <string>Total Balance including unconfirmed and immature zLocalTrade</string>
                  </property>
                  <property name="text">
-                  <string>Total zddCash Balance:</string>
+                  <string>Total zLocalTrade Balance:</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -998,10 +998,10 @@ zddCash are mature when they have more than 20 confirmations AND more than 1 min
                   </font>
                  </property>
                  <property name="toolTip">
-                  <string>Total Balance including unconfirmed and immature zddCash</string>
+                  <string>Total Balance including unconfirmed and immature zLocalTrade</string>
                  </property>
                  <property name="text">
-                  <string>0 zddCash</string>
+                  <string>0 zLocalTrade</string>
                  </property>
                  <property name="alignment">
                   <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
@@ -1576,7 +1576,7 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
          <enum>Qt::ActionsContextMenu</enum>
         </property>
         <property name="text">
-         <string notr="true">0.000 000 00 ddCash</string>
+         <string notr="true">0.000 000 00 LocalTrade</string>
         </property>
         <property name="textInteractionFlags">
          <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -1650,7 +1650,7 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
            <enum>Qt::ActionsContextMenu</enum>
           </property>
           <property name="text">
-           <string notr="true">0.00 ddCash</string>
+           <string notr="true">0.00 LocalTrade</string>
           </property>
           <property name="textInteractionFlags">
            <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -1847,7 +1847,7 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
          <enum>Qt::ActionsContextMenu</enum>
         </property>
         <property name="text">
-         <string notr="true">0.000 000 00 ddCash</string>
+         <string notr="true">0.000 000 00 LocalTrade</string>
         </property>
         <property name="textInteractionFlags">
          <set>Qt::LinksAccessibleByMouse|Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
@@ -2192,7 +2192,7 @@ Immature: confirmed, but less than 1 mints of the same denomination after it was
   </customwidget>
  </customwidgets>
  <resources>
-  <include location="../ddcash.qrc"/>
+  <include location="../localtrade.qrc"/>
  </resources>
  <connections/>
 </ui>

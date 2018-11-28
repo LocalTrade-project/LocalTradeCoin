@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/ddcash-config.h \
+           src/localtrade-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/ddcash-config.h \
+           src/config/localtrade-config.h \
            src/crypto/common.h \
            src/crypto/hmac_sha256.h \
            src/crypto/hmac_sha512.h \
@@ -333,7 +333,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/ddcash.moc \
+           src/qt/localtrade.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -374,9 +374,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/ddcash-cli.cpp \
-           src/ddcash-tx.cpp \
-           src/ddcash.cpp \
+           src/localtrade-cli.cpp \
+           src/localtrade-tx.cpp \
+           src/localtrade.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -471,8 +471,8 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/ddcash.cpp \
-           src/qt/ddcashstrings.cpp \
+           src/qt/localtrade.cpp \
+           src/qt/localtradestrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -550,7 +550,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_ddcash.cpp \
+           src/test/test_localtrade.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -641,21 +641,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/ddcash.qrc src/qt/ddcash_locale.qrc
+RESOURCES += src/qt/localtrade.qrc src/qt/localtrade_locale.qrc
 
-TRANSLATIONS += src/qt/locale/ddcash_bg.ts \
-                src/qt/locale/ddcash_de.ts \
-                src/qt/locale/ddcash_en.ts \
-                src/qt/locale/ddcash_es.ts \
-                src/qt/locale/ddcash_fi.ts \
-                src/qt/locale/ddcash_fr.ts \
-                src/qt/locale/ddcash_it.ts \
-                src/qt/locale/ddcash_ja.ts \
-                src/qt/locale/ddcash_pl.ts \
-                src/qt/locale/ddcash_pt.ts \
-                src/qt/locale/ddcash_ru.ts \
-                src/qt/locale/ddcash_sk.ts \
-                src/qt/locale/ddcash_sv.ts \
-                src/qt/locale/ddcash_vi.ts \
-                src/qt/locale/ddcash_zh_CN.ts \
-                src/qt/locale/ddcash_zh_TW.ts
+TRANSLATIONS += src/qt/locale/localtrade_bg.ts \
+                src/qt/locale/localtrade_de.ts \
+                src/qt/locale/localtrade_en.ts \
+                src/qt/locale/localtrade_es.ts \
+                src/qt/locale/localtrade_fi.ts \
+                src/qt/locale/localtrade_fr.ts \
+                src/qt/locale/localtrade_it.ts \
+                src/qt/locale/localtrade_ja.ts \
+                src/qt/locale/localtrade_pl.ts \
+                src/qt/locale/localtrade_pt.ts \
+                src/qt/locale/localtrade_ru.ts \
+                src/qt/locale/localtrade_sk.ts \
+                src/qt/locale/localtrade_sv.ts \
+                src/qt/locale/localtrade_vi.ts \
+                src/qt/locale/localtrade_zh_CN.ts \
+                src/qt/locale/localtrade_zh_TW.ts

@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your ddCash addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše ddCash adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your LocalTrade addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše LocalTrade adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your ddCash addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše ddCash adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your LocalTrade addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše LocalTrade adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,16 +176,16 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>ddCash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ddCashs from being stolen by malware infecting your computer.</source>
-        <translation>ddCash se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše ddCashy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>LocalTrade will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LocalTrades from being stolen by malware infecting your computer.</source>
+        <translation>LocalTrade se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše LocalTradey před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Opravdu chcete zašifrovat Vaši peněženku?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ddCash&lt;/b&gt;!</source>
-        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE ddCashy&lt;/b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LocalTrade&lt;/b&gt;!</source>
+        <translation>Varování: Pokud zašifrujete svou peněženku a ztratíte frázové heslo, tak &lt;b&gt;ZTRATÍTE VŠECHNY VAŠE LocalTradey&lt;/b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Šifrovat</translation>
     </message>
     <message>
-        <source>Enter a ddCash Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadejte ddCash adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
+        <source>Enter a LocalTrade Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadejte LocalTrade adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The ddCash address to sign the message with</source>
-        <translation>ddCash adresa pro podepsání zprávy</translation>
+        <source>The LocalTrade address to sign the message with</source>
+        <translation>LocalTrade adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ddCash address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto ddCash adresu</translation>
+        <source>Sign the message to prove you own this LocalTrade address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto LocalTrade adresu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Vložte BIP 38 šifrovaný privítní klíc. Frázové heslo vložte do prostředního boxu. Kliknětě na Dešifrovat Klíč pro výpočet privátního klíče. Poté co bude klíč dešifrován, kliknutím na 'Importovat Adresu' přidáte privátní klíč do Vaší peněženky.</translation>
     </message>
     <message>
-        <source>The ddCash address the message was signed with</source>
-        <translation>ddCash adresa zprávy byla podpsána</translation>
+        <source>The LocalTrade address the message was signed with</source>
+        <translation>LocalTrade adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ddCash address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou ddCash adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified LocalTrade address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou LocalTrade adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Core</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Core</translation>
     </message>
     <message>
-        <source>Send coins to a ddCash address</source>
-        <translation>Odeslat platbuna ddCash adresu</translation>
+        <source>Send coins to a LocalTrade address</source>
+        <translation>Odeslat platbuna LocalTrade adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ddcash: URIs)</source>
-        <translation>Vyžádat platbu (generování QK kódu a ddcash: URIs)</translation>
+        <source>Request payments (generates QR codes and localtrade: URIs)</source>
+        <translation>Vyžádat platbu (generování QK kódu a localtrade: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About ddCash Core</source>
-        <translation>&amp;O ddCash Core</translation>
+        <source>&amp;About LocalTrade Core</source>
+        <translation>&amp;O LocalTrade Core</translation>
     </message>
     <message>
-        <source>Show information about ddCash Core</source>
-        <translation>Zobraz informace o ddCash Core</translation>
+        <source>Show information about LocalTrade Core</source>
+        <translation>Zobraz informace o LocalTrade Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for ddCash</source>
-        <translation>Upravit možnosti konfigurace pro ddCash</translation>
+        <source>Modify configuration options for LocalTrade</source>
+        <translation>Upravit možnosti konfigurace pro LocalTrade</translation>
     </message>
     <message>
-        <source>Sign messages with your ddCash addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší ddCash adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your LocalTrade addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší LocalTrade adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified ddCash addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými ddCash adresami</translation>
+        <source>Verify messages to ensure they were signed with specified LocalTrade addresses</source>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými LocalTrade adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a ddCash: URI or payment request</source>
-        <translation>Otevřít ddCash: URI nebo platební žádost</translation>
+        <source>Open a LocalTrade: URI or payment request</source>
+        <translation>Otevřít LocalTrade: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the ddCash Core help message to get a list with possible ddCash command-line options</source>
-        <translation>Zobrazit ddCash Core pomocnou zpráv pro získání seznamu možných parametrů ddCash pro příkazy do příkazové řádky</translation>
+        <source>Show the LocalTrade Core help message to get a list with possible LocalTrade command-line options</source>
+        <translation>Zobrazit LocalTrade Core pomocnou zpráv pro získání seznamu možných parametrů LocalTrade pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>ddCash Core client</source>
-        <translation>ddCash Core klient</translation>
+        <source>LocalTrade Core client</source>
+        <translation>LocalTrade Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -809,8 +809,8 @@ MultiSend: %1</translation>
         <translation>TextPopisku</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ddcash2.conf).</source>
-        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (ddcash2.conf) txindex=1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (localtrade2.conf).</source>
+        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (localtrade2.conf) txindex=1.</translation>
     </message>
 </context>
 <context>
@@ -1066,8 +1066,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid ddCash address.</source>
-        <translation>Zadaná adresa "%1" není validní ddCash adresa.</translation>
+        <source>The entered address "%1" is not a valid LocalTrade address.</source>
+        <translation>Zadaná adresa "%1" není validní LocalTrade adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1112,12 +1112,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Core</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Core</translation>
     </message>
     <message>
-        <source>About ddCash Core</source>
-        <translation>O ddCash Core</translation>
+        <source>About LocalTrade Core</source>
+        <translation>O LocalTrade Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1151,16 +1151,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to ddCash Core.</source>
-        <translation>Vítejte v ddCash Core.</translation>
+        <source>Welcome to LocalTrade Core.</source>
+        <translation>Vítejte v LocalTrade Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where ddCash Core will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude ddCash Core ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where LocalTrade Core will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude LocalTrade Core ukládat svá data.</translation>
     </message>
     <message>
-        <source>ddCash Core will download and store a copy of the ddCash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>ddCash Core stáhne a uloží kopii ddCash blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>LocalTrade Core will download and store a copy of the LocalTrade block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>LocalTrade Core stáhne a uloží kopii LocalTrade blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1171,8 +1171,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Core</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1438,24 +1438,24 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Vyberte úrpvěň ochrany soukromí</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 ddCash</source>
-        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 ddCash</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 LocalTrade</source>
+        <translation>Použí 2 oddělené masternody k promíchání prostředků až do 10000 LocalTrade</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Použít 16 oddělených masternodů</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 ddCash to anonymize 10000 ddCash</source>
-        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 ddCash pro anonymizaci 10000 ddCash</translation>
+        <source>This option is the quickest and will cost about ~0.025 LocalTrade to anonymize 10000 LocalTrade</source>
+        <translation>Tato možnost je nejrychleší a bude stát zhruba ~0.025 LocalTrade pro anonymizaci 10000 LocalTrade</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Toto je nejpomalejší a nejvíce bezpečná volba. Použití maximalní anonymity bude stát</translation>
     </message>
     <message>
-        <source>0.1 ddCash per 10000 ddCash you anonymize.</source>
-        <translation>0.1 ddCash za 10000 ddCash anonymizujete.</translation>
+        <source>0.1 LocalTrade per 10000 LocalTrade you anonymize.</source>
+        <translation>0.1 LocalTrade za 10000 LocalTrade anonymizujete.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
@@ -1520,12 +1520,12 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start ddCash after logging in to the system.</source>
-        <translation>Automaticky spustit ddCash po přihlášení do systému</translation>
+        <source>Automatically start LocalTrade after logging in to the system.</source>
+        <translation>Automaticky spustit LocalTrade po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start ddCash on system login</source>
-        <translation>&amp;Spusti ddCash při přihlášení do systému</translation>
+        <source>&amp;Start LocalTrade on system login</source>
+        <translation>&amp;Spusti LocalTrade při přihlášení do systému</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -2057,8 +2057,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Změna:</translation>
     </message>
     <message>
-        <source>0 ddCash</source>
-        <translation>0 ddCash</translation>
+        <source>0 LocalTrade</source>
+        <translation>0 LocalTrade</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2186,8 +2186,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The ddCash address to sign the message with</source>
-        <translation>ddCash adresa pro podepsání zprávy</translation>
+        <source>The LocalTrade address to sign the message with</source>
+        <translation>LocalTrade adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2214,16 +2214,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ddCash address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto ddCash adresu</translation>
+        <source>Sign the message to prove you own this LocalTrade address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto LocalTrade adresu</translation>
     </message>
     <message>
-        <source>The ddCash address the message was signed with</source>
-        <translation>ddCash adresa zprávy byla podpsána</translation>
+        <source>The LocalTrade address the message was signed with</source>
+        <translation>LocalTrade adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ddCash address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou ddCash adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified LocalTrade address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou LocalTrade adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2265,8 +2265,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Core</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Core</translation>
     </message>
     </context>
 <context>
@@ -2376,7 +2376,7 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
     </context>
 <context>
-    <name>ddcash-core</name>
+    <name>localtrade-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

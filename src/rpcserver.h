@@ -96,7 +96,7 @@ public:
 };
 
 /**
- * ddCash RPC command dispatcher.
+ * LocalTrade RPC command dispatcher.
  */
 class CRPCTable
 {

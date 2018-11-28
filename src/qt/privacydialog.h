@@ -46,7 +46,7 @@ public:
 
     void setModel(WalletModel* model);
     void showOutOfSyncWarning(bool fShow);
-    void setZddCashControlLabels(int64_t nAmount, int nQuantity);
+    void setZLocalTradeControlLabels(int64_t nAmount, int nQuantity);
 
 public slots:
     void setBalance(const CAmount& balance, const CAmount& unconfirmedBalance, const CAmount& immatureBalance, 
@@ -76,7 +76,7 @@ private:
 
     int nDisplayUnit;
     bool updateLabel(const QString& address);
-    void sendzddCash();
+    void sendzLocalTrade();
 
 private slots:
     void on_payTo_textChanged(const QString& address);
@@ -96,11 +96,11 @@ private slots:
 //    void coinControlClipboardLowOutput();
 //    void coinControlClipboardChange();
 
-    void on_pushButtonMintzddCash_clicked();
+    void on_pushButtonMintzLocalTrade_clicked();
     void on_pushButtonMintReset_clicked();
     void on_pushButtonSpentReset_clicked();
-    void on_pushButtonSpendzddCash_clicked();
-    void on_pushButtonZddCashControl_clicked();
+    void on_pushButtonSpendzLocalTrade_clicked();
+    void on_pushButtonZLocalTradeControl_clicked();
     void on_pasteButton_clicked();
     void updateDisplayUnit();
 };

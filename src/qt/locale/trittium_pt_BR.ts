@@ -62,12 +62,12 @@
         <translation>Endereços de recebimento</translation>
     </message>
     <message>
-        <source>These are your ddCash addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Esses são seus endereços ddCash para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
+        <source>These are your LocalTrade addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Esses são seus endereços LocalTrade para envio de pagamentos. Sempre verifique a quantia e os endereços de recebimento antes de enviar moedas.</translation>
     </message>
     <message>
-        <source>These are your ddCash addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Esses são seus endereços ddCash para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
+        <source>These are your LocalTrade addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Esses são seus endereços LocalTrade para recebimento de pagamentos. É recomendado usar um novo endereço para cada transação.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -172,16 +172,16 @@
         <translation>Confirmar criptografia de carteira</translation>
     </message>
     <message>
-        <source>ddCash will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your ddCashs from being stolen by malware infecting your computer.</source>
-        <translation>ddCash vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas ddCashs de serem roubadas por malwares infectando seu computador.</translation>
+        <source>LocalTrade will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your LocalTrades from being stolen by malware infecting your computer.</source>
+        <translation>LocalTrade vai fechar agora para finalizar o processo de criptografia. Lembre-se que encriptar sua carteira não pode proteger totalmente suas LocalTrades de serem roubadas por malwares infectando seu computador.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
         <translation>Você tem certeza que deseja criptografar sua carteira?</translation>
     </message>
     <message>
-        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ddCash&lt;/b&gt;!</source>
-        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS ddCash&lt;b&gt;!</translation>
+        <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR LocalTrade&lt;/b&gt;!</source>
+        <translation>Aviso: se você criptografar sua carteira e perder sua senha você &lt;b&gt;PERDERÁ TODAS AS SUAS LocalTrade&lt;b&gt;!</translation>
     </message>
     <message>
         <source>Wallet encrypted</source>
@@ -235,7 +235,7 @@
         <translation>&amp;Encriptação BIP 38</translation>
     </message>
     <message>
-        <source>Enter a ddCash Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <source>Enter a LocalTrade Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
         <translation>Insira um endereço que você deseja criptografar usando a BIP 38. Insira a palavra-chave na caixa do meio. Pressione criptografar para computar a chave privada criptografada.</translation>
     </message>
     <message>
@@ -243,8 +243,8 @@
         <translation>Endereço:</translation>
     </message>
     <message>
-        <source>The ddCash address to sign the message with</source>
-        <translation>O endereço ddCash para assinar a mensagem</translation>
+        <source>The LocalTrade address to sign the message with</source>
+        <translation>O endereço LocalTrade para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -275,8 +275,8 @@
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ddCash address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço ddCash</translation>
+        <source>Sign the message to prove you own this LocalTrade address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço LocalTrade</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -291,12 +291,12 @@
         <translation>Limpar &amp;Tudo</translation>
     </message>
     <message>
-        <source>The ddCash address the message was signed with</source>
-        <translation>O endereço ddCash que assinou a mensagem</translation>
+        <source>The LocalTrade address the message was signed with</source>
+        <translation>O endereço LocalTrade que assinou a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ddCash address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço ddCash especificado.</translation>
+        <source>Verify the message to ensure it was signed with the specified LocalTrade address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço LocalTrade especificado.</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -586,16 +586,16 @@
         <translation>Ferramentas de abas</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Core</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Core</translation>
     </message>
     <message>
-        <source>Send coins to a ddCash address</source>
-        <translation>Enviar moedas para um endereço ddCash</translation>
+        <source>Send coins to a LocalTrade address</source>
+        <translation>Enviar moedas para um endereço LocalTrade</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and ddcash: URIs)</source>
-        <translation>Requisitar pagamentos (gera códigos QR e ddcash: URIs)</translation>
+        <source>Request payments (generates QR codes and localtrade: URIs)</source>
+        <translation>Requisitar pagamentos (gera códigos QR e localtrade: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -606,24 +606,24 @@
         <translation>Procurar masternodes</translation>
     </message>
     <message>
-        <source>&amp;About ddCash Core</source>
-        <translation>&amp;Sobre o ddCash Core</translation>
+        <source>&amp;About LocalTrade Core</source>
+        <translation>&amp;Sobre o LocalTrade Core</translation>
     </message>
     <message>
-        <source>Show information about ddCash Core</source>
-        <translation>Mostra informação sobre o ddCash Core</translation>
+        <source>Show information about LocalTrade Core</source>
+        <translation>Mostra informação sobre o LocalTrade Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for ddCash</source>
-        <translation>Modificar opções de configuração para ddCash</translation>
+        <source>Modify configuration options for LocalTrade</source>
+        <translation>Modificar opções de configuração para LocalTrade</translation>
     </message>
     <message>
-        <source>Sign messages with your ddCash addresses to prove you own them</source>
-        <translation>Assine mensagens com seus endereços ddCash para provar que você os detém</translation>
+        <source>Sign messages with your LocalTrade addresses to prove you own them</source>
+        <translation>Assine mensagens com seus endereços LocalTrade para provar que você os detém</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified ddCash addresses</source>
-        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços ddCash especificados</translation>
+        <source>Verify messages to ensure they were signed with specified LocalTrade addresses</source>
+        <translation>Verifique as mensagens para ter certeza que estão assinadas com os endereços LocalTrade especificados</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -654,8 +654,8 @@
         <translation>Abrir arquivo de configuração de Masternode</translation>
     </message>
     <message>
-        <source>Open a ddCash: URI or payment request</source>
-        <translation>Abrir um ddCash: URI ou requisição de pagamento</translation>
+        <source>Open a LocalTrade: URI or payment request</source>
+        <translation>Abrir um LocalTrade: URI ou requisição de pagamento</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -666,12 +666,12 @@
         <translation>Janela de exploração de blocos</translation>
     </message>
     <message>
-        <source>Show the ddCash Core help message to get a list with possible ddCash command-line options</source>
-        <translation>Mostra a ajuda da ddCash Core para receber uma lista com possíveis opções de linha de comando ddCash</translation>
+        <source>Show the LocalTrade Core help message to get a list with possible LocalTrade command-line options</source>
+        <translation>Mostra a ajuda da LocalTrade Core para receber uma lista com possíveis opções de linha de comando LocalTrade</translation>
     </message>
     <message>
-        <source>ddCash Core client</source>
-        <translation>Cliente Core ddCash</translation>
+        <source>LocalTrade Core client</source>
+        <translation>Cliente Core LocalTrade</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -806,8 +806,8 @@ MultiSend: %1</translation>
         <translation>Rótulo</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (ddcash2.conf).</source>
-        <translation>Nem todas as transações serão exibidas. Para visualizar todas as transações você precisa definir txindex=1 no arquivo de configuração (ddcash2.conf). </translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (localtrade2.conf).</source>
+        <translation>Nem todas as transações serão exibidas. Para visualizar todas as transações você precisa definir txindex=1 no arquivo de configuração (localtrade2.conf). </translation>
     </message>
 </context>
 <context>
@@ -1083,8 +1083,8 @@ MultiSend: %1</translation>
         <translation>Editar endereço remetente</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid ddCash address.</source>
-        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de ddCash</translation>
+        <source>The entered address "%1" is not a valid LocalTrade address.</source>
+        <translation>O endereço que você selecionou, "%1" , não é um endereço válido de LocalTrade</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1129,16 +1129,16 @@ MultiSend: %1</translation>
         <translation>versão</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Core</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About ddCash Core</source>
-        <translation>Sobre o ddCash Core</translation>
+        <source>About LocalTrade Core</source>
+        <translation>Sobre o LocalTrade Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1172,16 +1172,16 @@ MultiSend: %1</translation>
         <translation>Bem-vindo</translation>
     </message>
     <message>
-        <source>Welcome to ddCash Core.</source>
-        <translation>Bem-vindo ao ddCash Core.</translation>
+        <source>Welcome to LocalTrade Core.</source>
+        <translation>Bem-vindo ao LocalTrade Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where ddCash Core will store its data.</source>
-        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde ddCash Core vai armazenar os seus dados.</translation>
+        <source>As this is the first time the program is launched, you can choose where LocalTrade Core will store its data.</source>
+        <translation>Como essa é a primeira vez que o programa é utilizado, você pode escolher onde LocalTrade Core vai armazenar os seus dados.</translation>
     </message>
     <message>
-        <source>ddCash Core will download and store a copy of the ddCash block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>ddCash Core vai baixar e armazenar uma cópia da blockchain ddCash. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
+        <source>LocalTrade Core will download and store a copy of the LocalTrade block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>LocalTrade Core vai baixar e armazenar uma cópia da blockchain LocalTrade. Pelo menos %1GB de informação será armazenado neste diretório e irá aumentar com o tempo. A carteira também será armazenada neste diretório.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1192,8 +1192,8 @@ MultiSend: %1</translation>
         <translation>Usar um diretório personalizado de dados:</translation>
     </message>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Core</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1448,48 +1448,48 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Favor selecionar o nível de privacidade.</translation>
     </message>
     <message>
-        <source>Use 2 separate masternodes to mix funds up to 10000 ddCash</source>
-        <translation>Use 2 masternodes separados para embaralhar fundos até 10000 ddCash</translation>
+        <source>Use 2 separate masternodes to mix funds up to 10000 LocalTrade</source>
+        <translation>Use 2 masternodes separados para embaralhar fundos até 10000 LocalTrade</translation>
     </message>
     <message>
-        <source>Use 8 separate masternodes to mix funds up to 10000 ddCash</source>
-        <translation>Use 8 masternodes separados para embaralhar fundos até 10000 ddCash</translation>
+        <source>Use 8 separate masternodes to mix funds up to 10000 LocalTrade</source>
+        <translation>Use 8 masternodes separados para embaralhar fundos até 10000 LocalTrade</translation>
     </message>
     <message>
         <source>Use 16 separate masternodes</source>
         <translation>Use 16 masternodes separados</translation>
     </message>
     <message>
-        <source>This option is the quickest and will cost about ~0.025 ddCash to anonymize 10000 ddCash</source>
-        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 ddCash para anonimizar 10000 ddCash</translation>
+        <source>This option is the quickest and will cost about ~0.025 LocalTrade to anonymize 10000 LocalTrade</source>
+        <translation>Está opção é a mais rápida e vai custar em torno de ~0.025 LocalTrade para anonimizar 10000 LocalTrade</translation>
     </message>
     <message>
-        <source>This option is moderately fast and will cost about 0.05 ddCash to anonymize 10000 ddCash</source>
-        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 ddCash para anonimizar 10000 ddCash</translation>
+        <source>This option is moderately fast and will cost about 0.05 LocalTrade to anonymize 10000 LocalTrade</source>
+        <translation>Está opção moderamente rápida e vai custar em torno de ~0.05 LocalTrade para anonimizar 10000 LocalTrade</translation>
     </message>
     <message>
         <source>This is the slowest and most secure option. Using maximum anonymity will cost</source>
         <translation>Esta é a opção mais lenta e mais segura. Usando a anonimização máxima vai custar</translation>
     </message>
     <message>
-        <source>0.1 ddCash per 10000 ddCash you anonymize.</source>
-        <translation>0.1 ddCash por 10000 ddCash que deixar anônima.</translation>
+        <source>0.1 LocalTrade per 10000 LocalTrade you anonymize.</source>
+        <translation>0.1 LocalTrade por 10000 LocalTrade que deixar anônima.</translation>
     </message>
     <message>
         <source>Obfuscation Configuration</source>
         <translation>Configuração de ofuscação</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening ddCash's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para o básico (%1 e 2 rodadas) Você pode mudar isto a qualquer tempo ao abrir a configuração de tela ddCash's.</translation>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening LocalTrade's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para o básico (%1 e 2 rodadas) Você pode mudar isto a qualquer tempo ao abrir a configuração de tela LocalTrade's.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening ddCash's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para alto (%1 e 8 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela ddCash's.</translation>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening LocalTrade's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para alto (%1 e 8 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela LocalTrade's.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening ddCash's configuration screen.</source>
-        <translation>Ofuscação foi definida com sucesso para máxima (%1 e 16 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela ddCash's.</translation>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening LocalTrade's configuration screen.</source>
+        <translation>Ofuscação foi definida com sucesso para máxima (%1 e 16 rodadas). Você pode mudar isto a qualquer tempo ao abrir a configuração de tela LocalTrade's.</translation>
     </message>
 </context>
 <context>
@@ -1542,8 +1542,8 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>C&amp;arteira</translation>
     </message>
     <message>
-        <source>Automatically open the ddCash client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Abrir automaticamente a porta do cliente ddCash no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
+        <source>Automatically open the LocalTrade client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Abrir automaticamente a porta do cliente LocalTrade no roteador. Isto somente funciona quando seu roteador suporta UPnP e este esteja habilitado.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1562,12 +1562,12 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start ddCash after logging in to the system.</source>
-        <translation>Iniciar automaticamente ddCash depois de logar no sistema.</translation>
+        <source>Automatically start LocalTrade after logging in to the system.</source>
+        <translation>Iniciar automaticamente LocalTrade depois de logar no sistema.</translation>
     </message>
     <message>
-        <source>&amp;Start ddCash on system login</source>
-        <translation>&amp;Iniciar ddCash ao logar no sistema</translation>
+        <source>&amp;Start LocalTrade on system login</source>
+        <translation>&amp;Iniciar LocalTrade ao logar no sistema</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1582,18 +1582,18 @@ Favor verificar o endereço e tente novamente.</translation>
         <translation>&amp;Rede</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting ddCash.</source>
-        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do ddCash.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting LocalTrade.</source>
+        <translation>A linguagem da interface pode ser definida aqui. Está configuração terá efeito após reinício do LocalTrade.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/ddcash-project/ddcash-project-translations</source>
+https://www.transifex.com/localtrade-project/localtrade-project-translations</source>
         <translation>Linguagem não encontrada ou tradução incompleta? Ajude contribuido com traduções aqui:
-https://www.transifex.com/ddcash-project/ddcash-project-translations</translation>
+https://www.transifex.com/localtrade-project/localtrade-project-translations</translation>
     </message>
     <message>
-        <source>Connect to the ddCash network through a SOCKS5 proxy.</source>
-        <translation>Conectar à rede ddCash através de um proxy SOCKS5</translation>
+        <source>Connect to the LocalTrade network through a SOCKS5 proxy.</source>
+        <translation>Conectar à rede LocalTrade através de um proxy SOCKS5</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1727,8 +1727,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>Imaturo:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ddCash network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede ddCash após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LocalTrade network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede LocalTrade após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1816,8 +1816,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the ddCash network after a connection is established, but this process has not completed yet.</source>
-        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede ddCash após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the LocalTrade network after a connection is established, but this process has not completed yet.</source>
+        <translation>A informação mostrada pode estar desatualizada. A sua carteira se sincroniza automaticamente com a rede LocalTrade após estabelecer uma conexão, mas esse processo ainda não foi concluído.</translation>
     </message>
     <message>
         <source>0</source>
@@ -1923,8 +1923,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>Quantidade</translation>
     </message>
     <message>
-        <source>Enter a ddCash address (e.g. %1)</source>
-        <translation>Insira um endereço ddCash (e.g. %1)</translation>
+        <source>Enter a LocalTrade address (e.g. %1)</source>
+        <translation>Insira um endereço LocalTrade (e.g. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2173,8 +2173,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>saída:</translation>
     </message>
     <message>
-        <source>Welcome to the ddCash RPC console.</source>
-        <translation>Bem-vindo ao console da ddCash RPC</translation>
+        <source>Welcome to the LocalTrade RPC console.</source>
+        <translation>Bem-vindo ao console da LocalTrade RPC</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2425,8 +2425,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>Tamanho UTXO:</translation>
     </message>
     <message>
-        <source>0 ddCash</source>
-        <translation>0 ddCash</translation>
+        <source>0 LocalTrade</source>
+        <translation>0 LocalTrade</translation>
     </message>
     <message>
         <source>Transaction Fee:</source>
@@ -2465,12 +2465,12 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>Tempo de confirmação:</translation>
     </message>
     <message>
-        <source>If the custom fee is set to 1000 uddCashs and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uddCashs in fee,&lt;br /&gt;while "at least" pays 1000 uddCashs. For transactions bigger than a kilobyte both pay by kilobyte.</source>
-        <translation>Se a taxa padrão estiver definida para 1000 uddCashs e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uddCashs em taxa,&lt;br /&gt; pagará pelo menos 1000 uddCashs. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
+        <source>If the custom fee is set to 1000 uLocalTrades and the transaction is only 250 bytes, then "per kilobyte" only pays 250 uLocalTrades in fee,&lt;br /&gt;while "at least" pays 1000 uLocalTrades. For transactions bigger than a kilobyte both pay by kilobyte.</source>
+        <translation>Se a taxa padrão estiver definida para 1000 uLocalTrades e a transação for somente de 250 bytes, então "por kilobyte" pagará somente 250 uLocalTrades em taxa,&lt;br /&gt; pagará pelo menos 1000 uLocalTrades. Para transações maiores que um kilobyte ambas pagam por kilobyte.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for ddCash transactions than the network can process.</source>
-        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de ddCash do que a rede pode processar.</translation>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for LocalTrade transactions than the network can process.</source>
+        <translation>Pagar a taxa mínima é aceitável desde que existe menos volume de transações que espaço nos blocos. &lt;br/&gt; Mas fique atento que isso pode acabar em uma transação que nunca será confirmada caso haja mais demanda por transações de LocalTrade do que a rede pode processar.</translation>
     </message>
     <message>
         <source>normal</source>
@@ -2557,8 +2557,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>fundos anônimos</translation>
     </message>
     <message>
-        <source>Warning: Invalid ddCash address</source>
-        <translation>Aviso: endereço ddCash inválido</translation>
+        <source>Warning: Invalid LocalTrade address</source>
+        <translation>Aviso: endereço LocalTrade inválido</translation>
     </message>
     <message>
         <source>any available funds (not recommended)</source>
@@ -2652,8 +2652,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>Pagar &amp;Para:</translation>
     </message>
     <message>
-        <source>The ddCash address to send the payment to</source>
-        <translation>O endereço ddCash para enviar o pagamento</translation>
+        <source>The LocalTrade address to send the payment to</source>
+        <translation>O endereço LocalTrade para enviar o pagamento</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2715,8 +2715,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>ddCash Core is shutting down...</source>
-        <translation>ddCash Core está desligando...</translation>
+        <source>LocalTrade Core is shutting down...</source>
+        <translation>LocalTrade Core está desligando...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -2734,8 +2734,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>&amp;Assinar mensagem</translation>
     </message>
     <message>
-        <source>The ddCash address to sign the message with</source>
-        <translation>O endereço ddCash para assinar a mensagem</translation>
+        <source>The LocalTrade address to sign the message with</source>
+        <translation>O endereço LocalTrade para assinar a mensagem</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2766,16 +2766,16 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>Copia a assinatura atual do sistema de transferência</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this ddCash address</source>
-        <translation>Assine a mensagem para provar que você possui este endereço ddCash</translation>
+        <source>Sign the message to prove you own this LocalTrade address</source>
+        <translation>Assine a mensagem para provar que você possui este endereço LocalTrade</translation>
     </message>
     <message>
-        <source>The ddCash address the message was signed with</source>
-        <translation>O endereço ddCash que assinou a mensagem</translation>
+        <source>The LocalTrade address the message was signed with</source>
+        <translation>O endereço LocalTrade que assinou a mensagem</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified ddCash address</source>
-        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço ddCash especificado.</translation>
+        <source>Verify the message to ensure it was signed with the specified LocalTrade address</source>
+        <translation>Verifique a mensagem para ter certeza que foi assinada com o endereço LocalTrade especificado.</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2857,8 +2857,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>ddCash Core</source>
-        <translation>ddCash Core</translation>
+        <source>LocalTrade Core</source>
+        <translation>LocalTrade Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -2873,8 +2873,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>Os desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>The ddCash Core developers</source>
-        <translation>Os desenvolvedores do ddCash Core</translation>
+        <source>The LocalTrade Core developers</source>
+        <translation>Os desenvolvedores do LocalTrade Core</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3357,8 +3357,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>Enviar Moedas</translation>
     </message>
     <message>
-        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 ddCash.</source>
-        <translation>SwiftTX ainda não suporta o envio de valores altos assim. As transações atualmente são limitadas a %1 ddCash.</translation>
+        <source>SwiftTX doesn't support sending values that high yet. Transactions are currently limited to %1 LocalTrade.</source>
+        <translation>SwiftTX ainda não suporta o envio de valores altos assim. As transações atualmente são limitadas a %1 LocalTrade.</translation>
     </message>
 </context>
 <context>
@@ -3408,14 +3408,14 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
     </message>
     </context>
 <context>
-    <name>ddcash-core</name>
+    <name>localtrade-core</name>
     <message>
         <source>Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</source>
         <translation>Deletar todas as transações da carteira e somente recuperar aquelas partes da blockchain através de -rescan na inicialização</translation>
     </message>
     <message>
-        <source>Disable all ddCash specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Desabilitar todas as funcionalidades específicas ddCash (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, padrão: %u)</translation>
+        <source>Disable all LocalTrade specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Desabilitar todas as funcionalidades específicas LocalTrade (Masternodes, Ofuscação, SwiftTX, Budgeting) (0-1, padrão: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -socks found. Setting SOCKS version isn't possible anymore, only SOCKS5 proxies are supported.</source>
@@ -3430,12 +3430,12 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>Executar o comando quando uma transação da carteira mudar (%s no cmd será substituído pela TxID)</translation>
     </message>
     <message>
-        <source>Fees (in ddCash/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
-        <translation>Taxas (em ddCash/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
+        <source>Fees (in LocalTrade/Kb) smaller than this are considered zero fee for relaying (default: %s)</source>
+        <translation>Taxas (em LocalTrade/Kb) menores que isso serão consideradas taxa zero para propagação (padrão: %s)</translation>
     </message>
     <message>
-        <source>Fees (in ddCash/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
-        <translation>Taxas (em ddCash/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
+        <source>Fees (in LocalTrade/Kb) smaller than this are considered zero fee for transaction creation (default: %s)</source>
+        <translation>Taxas (em LocalTrade/Kb) menores que isso serão consideradas taxa zero para a criação da transação (padrão: %s)</translation>
     </message>
     <message>
         <source>In this mode -genproclimit controls how many blocks are generated immediately.</source>
@@ -3458,8 +3458,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>SwiftTX requer inputs com pelo menos 6 confirmações, você precisar aguardar alguns minutos e tentar novamente.</translation>
     </message>
     <message>
-        <source>Unable to locate enough funds for this transaction that are not equal 10000 ddCash.</source>
-        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 ddCash.</translation>
+        <source>Unable to locate enough funds for this transaction that are not equal 10000 LocalTrade.</source>
+        <translation>Incapaz de localizar fundos para esta transação que não são iguais a 10000 LocalTrade.</translation>
     </message>
     <message>
         <source>Use separate SOCKS5 proxy to reach peers via Tor hidden services (default: %s)</source>
@@ -3474,8 +3474,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>Aviso: -paytxfee está definido como muito alto! Está e a taxa de transação que você irá pagar se enviar uma transação.</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong ddCash Core will not work properly.</source>
-        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core ddCash não vai funcionar corretamente.</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong LocalTrade Core will not work properly.</source>
+        <translation>Aviso: Favor verificar se o horário e data de seu computador estão corretos! Se o seu relógio estiver errado o Core LocalTrade não vai funcionar corretamente.</translation>
     </message>
     <message>
         <source>Warning: The network does not appear to fully agree! Some miners appear to be experiencing issues.</source>
@@ -3554,8 +3554,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>Todos os direitos reservados (C) 2014-%i aos Desenvolvedores do Dash Core</translation>
     </message>
     <message>
-        <source>Copyright (C) 2015-%i The ddCash Core Developers</source>
-        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do ddCash Core</translation>
+        <source>Copyright (C) 2015-%i The LocalTrade Core Developers</source>
+        <translation>Todos os direitos reservados (C) 2015-%i aos Desenvolvedores do LocalTrade Core</translation>
     </message>
     <message>
         <source>Corrupted block database detected</source>
@@ -3606,8 +3606,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>Erro no carregamento da wallet.dat: Carteira corrompida</translation>
     </message>
     <message>
-        <source>Error loading wallet.dat: Wallet requires newer version of ddCash Core</source>
-        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da ddCash Core</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of LocalTrade Core</source>
+        <translation>Erro ao carregar wallet.dat: A Carteira requer uma nova versão da LocalTrade Core</translation>
     </message>
     <message>
         <source>Error opening block database</source>
@@ -3646,8 +3646,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>Falhou em ler o bloco</translation>
     </message>
     <message>
-        <source>Fee (in ddCash/kB) to add to transactions you send (default: %s)</source>
-        <translation>Taxa (em ddCash/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
+        <source>Fee (in LocalTrade/kB) to add to transactions you send (default: %s)</source>
+        <translation>Taxa (em LocalTrade/kB) a adicionar em transações que você enviar (padrão: %s)</translation>
     </message>
     <message>
         <source>Finalizing transaction.</source>
@@ -4078,8 +4078,8 @@ https://www.transifex.com/ddcash-project/ddcash-project-translations</translatio
         <translation>Carteira está travada.</translation>
     </message>
     <message>
-        <source>Wallet needed to be rewritten: restart ddCash Core to complete</source>
-        <translation>A carteira precisa ser reescrita: reinicia o ddCash Core para completar</translation>
+        <source>Wallet needed to be rewritten: restart LocalTrade Core to complete</source>
+        <translation>A carteira precisa ser reescrita: reinicia o LocalTrade Core para completar</translation>
     </message>
     <message>
         <source>Wallet options:</source>

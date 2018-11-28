@@ -1,8 +1,8 @@
 // Copyright (c) 2017 The PIVX developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
-#ifndef ddCash_ZEROCOIN_H
-#define ddCash_ZEROCOIN_H
+#ifndef LocalTrade_ZEROCOIN_H
+#define LocalTrade_ZEROCOIN_H
 
 #include <amount.h>
 #include <limits.h>
@@ -189,4 +189,4 @@ public:
     int GetNeededSpends();
 };
 
-#endif //ddCash_ZEROCOIN_H
+#endif //LocalTrade_ZEROCOIN_H
