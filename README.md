@@ -15,9 +15,7 @@ Block Size : 3MB
  
 Total Coins: 100,000,000
 
-Minimum Stake Age : 24 Hour
-
-Maximum Stake Age : 7 Days 
+Minimum Stake Age : 12 Hours
 
 Coin Maturity : 10
 
