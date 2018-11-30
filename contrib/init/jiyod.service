@@ -1,19 +1,19 @@
 [Unit]
-Description=Jiyo's distributed currency daemon
+Description=localtrade's distributed currency daemon
 After=network.target
 
 [Service]
-User=jiyo
-Group=jiyo
+User=localtrade
+Group=localtrade
 
 Type=forking
-PIDFile=/var/lib/jiyod/jiyod.pid
+PIDFile=/var/lib/localtraded/localtraded.pid
 
-ExecStart=/usr/bin/jiyod -daemon -pid=/var/lib/jiyod/jiyod.pid \
-          -conf=/etc/jiyo/jiyo.conf -datadir=/var/lib/jiyod
+ExecStart=/usr/bin/localtraded -daemon -pid=/var/lib/localtraded/localtraded.pid \
+          -conf=/etc/localtrade/localtrade.conf -datadir=/var/lib/localtraded
 
-ExecStop=-/usr/bin/jiyo-cli -conf=/etc/jiyo/jiyo.conf \
-         -datadir=/var/lib/jiyod stop
+ExecStop=-/usr/bin/localtrade-cli -conf=/etc/localtrade/localtrade.conf \
+         -datadir=/var/lib/localtraded stop
 
 Restart=always
 PrivateTmp=true

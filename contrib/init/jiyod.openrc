@@ -2,24 +2,24 @@
 
 # backward compatibility for existing gentoo layout
 #
-if [ -d "/var/lib/jiyo/.jiyo" ]; then
-	BITCOIND_DEFAULT_DATADIR="/var/lib/jiyo/.jiyo"
+if [ -d "/var/lib/localtrade/.localtrade" ]; then
+	BITCOIND_DEFAULT_DATADIR="/var/lib/localtrade/.localtrade"
 else
-	BITCOIND_DEFAULT_DATADIR="/var/lib/jiyod"
+	BITCOIND_DEFAULT_DATADIR="/var/lib/localtraded"
 fi
 
-BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/jiyo/jiyo.conf}
-BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/jiyod}
-BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/jiyod.pid}
+BITCOIND_CONFIGFILE=${BITCOIND_CONFIGFILE:-/etc/localtrade/localtrade.conf}
+BITCOIND_PIDDIR=${BITCOIND_PIDDIR:-/var/run/localtraded}
+BITCOIND_PIDFILE=${BITCOIND_PIDFILE:-${BITCOIND_PIDDIR}/localtraded.pid}
 BITCOIND_DATADIR=${BITCOIND_DATADIR:-${BITCOIND_DEFAULT_DATADIR}}
-BITCOIND_USER=${BITCOIND_USER:-jiyo}
-BITCOIND_GROUP=${BITCOIND_GROUP:-jiyo}
-BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/jiyod}
+BITCOIND_USER=${BITCOIND_USER:-localtrade}
+BITCOIND_GROUP=${BITCOIND_GROUP:-localtrade}
+BITCOIND_BIN=${BITCOIND_BIN:-/usr/bin/localtraded}
 
-name="Jiyo Core Daemon"
-description="Jiyo crypto-currency p2p network daemon"
+name="localtrade Core Daemon"
+description="localtrade crypto-currency p2p network daemon"
 
-command="/usr/bin/jiyod"
+command="/usr/bin/localtraded"
 command_args="-pid=\"${BITCOIND_PIDFILE}\" \
 		-conf=\"${BITCOIND_CONFIGFILE}\" \
 		-datadir=\"${BITCOIND_DATADIR}\" \
@@ -65,7 +65,7 @@ checkconfig()
 {
 	if ! grep -qs '^rpcpassword=' "${BITCOIND_CONFIGFILE}" ; then
 		eerror ""
-		eerror "ERROR: You must set a secure rpcpassword to run jiyod."
+		eerror "ERROR: You must set a secure rpcpassword to run localtraded."
 		eerror "The setting must appear in ${BITCOIND_CONFIGFILE}"
 		eerror ""
 		eerror "This password is security critical to securing wallets "
@@ -78,7 +78,7 @@ checkconfig()
 		eerror "It is also recommended that you also set alertnotify so you are "
 		eerror "notified of problems:"
 		eerror ""
-		eerror "ie: alertnotify=echo %%s | mail -s \"Jiyo Alert\"" \
+		eerror "ie: alertnotify=echo %%s | mail -s \"localtrade Alert\"" \
 			"admin@foo.com"
 		eerror ""
 		return 1

@@ -1,10 +1,10 @@
 Sample configuration files for:
 
-SystemD: jiyod.service
-Upstart: jiyod.conf
-OpenRC:  jiyod.openrc
-         jiyod.openrcconf
-CentOS:  jiyod.init
+SystemD: localtraded.service
+Upstart: localtraded.conf
+OpenRC:  localtraded.openrc
+         localtraded.openrcconf
+CentOS:  localtraded.init
 
 have been made available to assist packagers in creating node packages here.
 

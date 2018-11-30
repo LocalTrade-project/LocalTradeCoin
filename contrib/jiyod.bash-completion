@@ -1,12 +1,12 @@
-# bash programmable completion for jiyod(1) and jiyo-cli(1)
+# bash programmable completion for localtraded(1) and localtrade-cli(1)
 # Copyright (c) 2012,2014 Christian von Roques <roques@mti.ag>
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-have jiyod && {
+have localtraded && {
 
-# call $jiyod for RPC
-_jiyo_rpc() {
+# call $localtraded for RPC
+_localtrade_rpc() {
     # determine already specified args necessary for RPC
     local rpcargs=()
     for i in ${COMP_LINE}; do
@@ -16,23 +16,23 @@ _jiyo_rpc() {
                 ;;
         esac
     done
-    $jiyod "${rpcargs[@]}" "$@"
+    $localtraded "${rpcargs[@]}" "$@"
 }
 
-# Add jiyo accounts to COMPREPLY
-_jiyo_accounts() {
+# Add localtrade accounts to COMPREPLY
+_localtrade_accounts() {
     local accounts
-    accounts=$(_jiyo_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
+    accounts=$(_localtrade_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
     COMPREPLY=( "${COMPREPLY[@]}" $( compgen -W "$accounts" -- "$cur" ) )
 }
 
-_jiyod() {
+_localtraded() {
     local cur prev words=() cword
-    local jiyod
+    local localtraded
 
-    # save and use original argument to invoke jiyod
-    # jiyod might not be in $PATH
-    jiyod="$1"
+    # save and use original argument to invoke localtraded
+    # localtraded might not be in $PATH
+    localtraded="$1"
 
     COMPREPLY=()
     _get_comp_words_by_ref -n = cur prev words cword
@@ -53,7 +53,7 @@ _jiyod() {
     if ((cword > 3)); then
         case ${words[cword-3]} in
             addmultisigaddress)
-                _jiyo_accounts
+                _localtrade_accounts
                 return 0
                 ;;
             getbalance|gettxout|importaddress|importprivkey|listreceivedbyaccount|listreceivedbyaddress|listsinceblock)
@@ -74,7 +74,7 @@ _jiyod() {
                 return 0
                 ;;
             move|setaccount)
-                _jiyo_accounts
+                _localtrade_accounts
                 return 0
                 ;;
         esac
@@ -90,7 +90,7 @@ _jiyod() {
             return 0
             ;;
         getaccountaddress|getaddressesbyaccount|getbalance|getnewaddress|getreceivedbyaccount|listtransactions|move|sendfrom|sendmany)
-            _jiyo_accounts
+            _localtrade_accounts
             return 0
             ;;
     esac
@@ -114,12 +114,12 @@ _jiyod() {
 
             # only parse --help if senseful
             if [[ -z "$cur" || "$cur" =~ ^- ]]; then
-                helpopts=$($jiyod --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
+                helpopts=$($localtraded --help 2>&1 | awk '$1 ~ /^-/ { sub(/=.*/, "="); print $1 }' )
             fi
 
             # only parse help if senseful
             if [[ -z "$cur" || "$cur" =~ ^[a-z] ]]; then
-                commands=$(_jiyo_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
+                commands=$(_localtrade_rpc help 2>/dev/null | awk '$1 ~ /^[a-z]/ { print $1; }')
             fi
 
             COMPREPLY=( $( compgen -W "$helpopts $commands" -- "$cur" ) )
@@ -133,7 +133,7 @@ _jiyod() {
     esac
 }
 
-complete -F _jiyod jiyod jiyo-cli
+complete -F _localtraded localtraded localtrade-cli
 }
 
 # Local variables:

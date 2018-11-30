@@ -1,6 +1,6 @@
 [Protocol]
-exec=jiyo-qt '%u'
-protocol=jiyo
+exec=localtrade-qt '%u'
+protocol=localtrade
 input=none
 output=none
 helper=true
